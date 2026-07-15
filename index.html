@@ -1,0 +1,1491 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light" data-lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Easy Accounting With Pradeepan! | A/L Accounting &amp; Business Studies Online</title>
+<meta name="description" content="Easy Accounting With Pradeepan — online A/L Accounting &amp; Business Studies classes for Sri Lankan students. Theory, paper discussions, revision, model papers, live Zoom classes, and an AI accounting tutor. Tamil &amp; English medium.">
+<meta name="keywords" content="A/L Accounting, A/L Business Studies, Pradeepan, online tuition Sri Lanka, Tamil medium accounting, CA Sri Lanka, accounting classes Sri Lanka">
+<meta name="author" content="Y. Pradeepan">
+<meta property="og:title" content="Easy Accounting With Pradeepan!">
+<meta property="og:description" content="Learn Smart. Score Higher. Succeed. — Online A/L Accounting & Business classes.">
+<meta property="og:type" content="website">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700;9..144,800&family=Inter:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&family=Hind+Madurai:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<style>
+/* ============================= TOKENS ============================= */
+:root{
+  --bg:#F6F5F0;
+  --bg-alt:#EEECE3;
+  --surface:#FFFFFF;
+  --surface-2:#FBFAF6;
+  --ink:#10182A;
+  --ink-soft:#4E5768;
+  --ink-faint:#8890A0;
+  --navy:#0E2545;
+  --navy-2:#153josh;
+  --navy-2:#15325C;
+  --gold:#B98A1F;
+  --gold-bright:#D9A93B;
+  --green:#1E7A54;
+  --red:#B4483A;
+  --line:#DEDACB;
+  --line-strong:#C9C4B0;
+  --radius-sm:6px;
+  --radius:12px;
+  --radius-lg:20px;
+  --shadow-sm:0 1px 2px rgba(16,24,42,.06), 0 1px 1px rgba(16,24,42,.04);
+  --shadow-md:0 8px 24px rgba(16,24,42,.08);
+  --shadow-lg:0 20px 48px rgba(16,24,42,.14);
+  --font-display:'Fraunces', 'Hind Madurai', serif;
+  --font-body:'Inter', 'Hind Madurai', sans-serif;
+  --font-mono:'IBM Plex Mono', monospace;
+  --header-h:76px;
+}
+[data-theme="dark"]{
+  --bg:#0A1220;
+  --bg-alt:#0F1A2C;
+  --surface:#121D30;
+  --surface-2:#16233A;
+  --ink:#ECEEF3;
+  --ink-soft:#AEB6C6;
+  --ink-faint:#717C90;
+  --navy:#DCE8FB;
+  --navy-2:#B9CDEE;
+  --gold:#E3B23C;
+  --gold-bright:#F2C765;
+  --green:#3FB483;
+  --red:#E07360;
+  --line:#233150;
+  --line-strong:#2C3D62;
+  --shadow-sm:0 1px 2px rgba(0,0,0,.3);
+  --shadow-md:0 8px 24px rgba(0,0,0,.35);
+  --shadow-lg:0 24px 56px rgba(0,0,0,.5);
+}
+[data-lang="ta"] :is(h1,h2,h3,h4,h5,h6,p,a,span,button,label,li,input,select,textarea,td,th,small){
+  font-family:'Hind Madurai','Inter',sans-serif;
+}
+*,*::before,*::after{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+section[id],div[id]{scroll-margin-top:var(--header-h);}
+body{
+  margin:0;
+  background:var(--bg);
+  color:var(--ink);
+  font-family:var(--font-body);
+  font-size:16px;
+  line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+  transition:background .35s ease,color .35s ease;
+  overflow-x:hidden;
+}
+img{max-width:100%;display:block;}
+a{color:inherit;text-decoration:none;}
+button{font-family:inherit;cursor:pointer;}
+ul{margin:0;padding:0;list-style:none;}
+h1,h2,h3,h4{font-family:var(--font-display);margin:0;font-weight:700;letter-spacing:-.01em;}
+p{margin:0;}
+.container{max-width:1200px;margin:0 auto;padding:0 24px;}
+[data-en],[data-ta]{}
+[data-lang="en"] [data-ta-only]{display:none !important;}
+[data-lang="ta"] [data-en-only]{display:none !important;}
+::selection{background:var(--gold);color:#1a1300;}
+:focus-visible{outline:2px solid var(--gold);outline-offset:2px;}
+
+/* ============================= LEDGER TEXTURE ============================= */
+.ledger-lines{
+  background-image:repeating-linear-gradient(to bottom, transparent, transparent 27px, var(--line) 28px);
+}
+.section-eyebrow{
+  display:inline-flex;align-items:center;gap:8px;
+  font-family:var(--font-mono);
+  font-size:12px;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--gold);font-weight:600;margin-bottom:14px;
+}
+.section-eyebrow::before{content:"";width:22px;height:1px;background:var(--gold);}
+.section-head{max-width:640px;margin-bottom:48px;}
+.section-head h2{font-size:clamp(28px,4vw,40px);color:var(--ink);}
+.section-head p{margin-top:14px;color:var(--ink-soft);font-size:17px;}
+.section-pad{padding:96px 0;}
+.divider-rule{height:1px;background:var(--line);border:none;margin:0;}
+
+/* ============================= BUTTONS ============================= */
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:9px;
+  padding:14px 26px;border-radius:8px;font-weight:600;font-size:15px;
+  border:1px solid transparent;transition:transform .18s ease,box-shadow .18s ease,background .2s ease,color .2s ease,border-color .2s ease;
+  white-space:nowrap;
+}
+.btn:active{transform:translateY(1px) scale(.99);}
+.btn-primary{background:var(--navy);color:#fff;box-shadow:var(--shadow-sm);}
+[data-theme="dark"] .btn-primary{background:var(--gold);color:#1a1300;}
+.btn-primary:hover{box-shadow:var(--shadow-md);transform:translateY(-2px);}
+.btn-gold{background:var(--gold);color:#1a1300;}
+.btn-gold:hover{background:var(--gold-bright);transform:translateY(-2px);box-shadow:var(--shadow-md);}
+.btn-whatsapp{background:#25D366;color:#06210f;}
+.btn-whatsapp:hover{transform:translateY(-2px);box-shadow:var(--shadow-md);}
+.btn-outline{background:transparent;border-color:var(--line-strong);color:var(--ink);}
+.btn-outline:hover{border-color:var(--navy);}
+[data-theme="dark"] .btn-outline:hover{border-color:var(--gold);}
+.btn-sm{padding:9px 16px;font-size:13px;border-radius:6px;}
+.btn-block{width:100%;}
+
+/* ============================= HEADER ============================= */
+header{
+  position:fixed;top:0;left:0;right:0;z-index:1000;
+  height:var(--header-h);
+  background:color-mix(in srgb, var(--bg) 88%, transparent);
+  backdrop-filter:blur(14px);
+  border-bottom:1px solid var(--line);
+  transition:background .35s ease,border-color .35s ease;
+}
+.nav-wrap{display:flex;align-items:center;justify-content:space-between;height:100%;}
+.brand{display:flex;align-items:center;gap:11px;}
+.brand-mark{
+  width:42px;height:42px;border-radius:8px;
+  background:var(--navy);color:var(--gold-bright);
+  display:flex;align-items:center;justify-content:center;
+  font-family:var(--font-display);font-weight:700;font-size:19px;
+  box-shadow:var(--shadow-sm);
+  position:relative;flex-shrink:0;
+}
+.brand-mark::after{
+  content:"";position:absolute;inset:3px;border:1px solid rgba(217,169,59,.45);border-radius:5px;
+}
+.brand-text{display:flex;flex-direction:column;line-height:1.15;}
+.brand-text strong{font-family:var(--font-display);font-size:16.5px;font-weight:700;}
+.brand-text span{font-family:var(--font-mono);font-size:10.5px;letter-spacing:.08em;color:var(--ink-faint);text-transform:uppercase;}
+
+nav.main-nav{display:flex;align-items:center;gap:28px;}
+nav.main-nav a{font-size:14.5px;font-weight:500;color:var(--ink-soft);position:relative;padding:6px 0;}
+nav.main-nav a::after{
+  content:"";position:absolute;left:0;bottom:0;height:2px;width:0;background:var(--gold);transition:width .25s ease;
+}
+nav.main-nav a:hover{color:var(--ink);}
+nav.main-nav a:hover::after{width:100%;}
+
+.header-actions{display:flex;align-items:center;gap:10px;}
+.icon-toggle{
+  width:38px;height:38px;border-radius:8px;border:1px solid var(--line);
+  background:var(--surface);color:var(--ink-soft);
+  display:flex;align-items:center;justify-content:center;font-size:14px;
+  transition:all .2s ease;
+}
+.icon-toggle:hover{border-color:var(--gold);color:var(--gold);}
+.lang-toggle{
+  display:flex;border:1px solid var(--line);border-radius:8px;overflow:hidden;
+}
+.lang-toggle button{
+  border:none;background:var(--surface);color:var(--ink-soft);font-size:12.5px;font-weight:700;
+  padding:0 11px;height:38px;transition:all .2s ease;font-family:var(--font-mono);
+}
+.lang-toggle button.active{background:var(--navy);color:#fff;}
+[data-theme="dark"] .lang-toggle button.active{background:var(--gold);color:#1a1300;}
+.burger{display:none;width:38px;height:38px;border-radius:8px;border:1px solid var(--line);background:var(--surface);align-items:center;justify-content:center;font-size:16px;color:var(--ink);}
+
+/* ============================= HERO ============================= */
+.hero{
+  padding:calc(var(--header-h) + 64px) 0 80px;
+  position:relative;
+  background:
+    radial-gradient(ellipse 900px 500px at 85% -10%, color-mix(in srgb, var(--gold) 14%, transparent), transparent),
+    var(--bg);
+  overflow:hidden;
+}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center;}
+.hero-copy h1{font-size:clamp(36px,5.2vw,60px);line-height:1.05;color:var(--ink);}
+.hero-copy h1 em{font-style:normal;color:var(--gold);position:relative;}
+.hero-copy .lede{margin-top:22px;font-size:18px;color:var(--ink-soft);max-width:520px;}
+.hero-ctas{display:flex;gap:14px;margin-top:34px;flex-wrap:wrap;}
+.hero-meta{display:flex;gap:26px;margin-top:42px;flex-wrap:wrap;}
+.hero-meta div{display:flex;flex-direction:column;}
+.hero-meta strong{font-family:var(--font-mono);font-size:24px;color:var(--navy);}
+[data-theme="dark"] .hero-meta strong{color:var(--gold);}
+.hero-meta span{font-size:12.5px;color:var(--ink-faint);margin-top:2px;}
+
+/* ---- Signature: Ledger / T-Account card ---- */
+.ledger-card{
+  background:var(--surface);
+  border:1px solid var(--line);
+  border-radius:var(--radius-lg);
+  box-shadow:var(--shadow-lg);
+  padding:30px 30px 26px;
+  position:relative;
+  animation:cardIn 1s cubic-bezier(.2,.8,.2,1) both;
+}
+@keyframes cardIn{from{opacity:0;transform:translateY(24px) rotate(-1.2deg);}to{opacity:1;transform:translateY(0) rotate(-1.2deg);}}
+.ledger-card{transform:rotate(-1.2deg);}
+.ledger-top{display:flex;justify-content:space-between;align-items:flex-start;border-bottom:2px solid var(--ink);padding-bottom:14px;margin-bottom:6px;}
+.ledger-top h4{font-size:13px;text-transform:uppercase;letter-spacing:.1em;font-family:var(--font-mono);color:var(--ink-faint);}
+.ledger-top .stamp{
+  font-family:var(--font-mono);font-size:11px;font-weight:700;letter-spacing:.08em;
+  color:var(--green);border:1.5px solid var(--green);border-radius:20px;padding:4px 10px;
+  transform:rotate(6deg);opacity:0;animation:stampIn .5s ease .9s forwards;
+}
+@keyframes stampIn{from{opacity:0;transform:rotate(6deg) scale(1.6);}to{opacity:1;transform:rotate(6deg) scale(1);}}
+.ledger-cols{display:grid;grid-template-columns:1fr 1fr;gap:0;}
+.ledger-col{padding:16px 14px 0;}
+.ledger-col:first-child{border-right:1px solid var(--line);}
+.ledger-col h5{font-family:var(--font-mono);font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:var(--ink-faint);margin-bottom:12px;}
+.ledger-row{
+  display:flex;justify-content:space-between;font-size:13.5px;padding:8px 0;
+  border-bottom:1px dashed var(--line);color:var(--ink-soft);
+  opacity:0;animation:rowIn .5s ease forwards;
+}
+.ledger-row span:last-child{font-family:var(--font-mono);color:var(--ink);}
+.ledger-row:nth-child(2){animation-delay:.15s;}
+.ledger-row:nth-child(3){animation-delay:.3s;}
+.ledger-row:nth-child(4){animation-delay:.45s;}
+@keyframes rowIn{from{opacity:0;transform:translateX(-6px);}to{opacity:1;transform:translateX(0);}}
+.ledger-total{
+  margin-top:14px;padding-top:12px;border-top:2px solid var(--ink);
+  display:flex;justify-content:space-between;font-family:var(--font-mono);font-weight:700;font-size:14px;
+}
+.ledger-badge{
+  position:absolute;top:-16px;right:-14px;width:74px;height:74px;border-radius:50%;
+  background:var(--gold);color:#1a1300;display:flex;flex-direction:column;align-items:center;justify-content:center;
+  font-family:var(--font-mono);font-weight:800;box-shadow:var(--shadow-md);
+  transform:rotate(10deg) scale(0);animation:badgeIn .5s cubic-bezier(.3,1.6,.5,1) 1.1s forwards;
+  border:3px solid var(--surface);
+}
+@keyframes badgeIn{to{transform:rotate(10deg) scale(1);}}
+.ledger-badge span{font-size:19px;line-height:1;}
+.ledger-badge small{font-size:8px;letter-spacing:.06em;}
+
+/* ============================= MARQUEE ============================= */
+.marquee-wrap{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--surface-2);padding:14px 0;overflow:hidden;}
+.marquee-track{display:flex;gap:48px;width:max-content;animation:scroll 26s linear infinite;}
+@keyframes scroll{from{transform:translateX(0);}to{transform:translateX(-50%);}}
+.marquee-track span{font-family:var(--font-mono);font-size:13px;color:var(--ink-faint);white-space:nowrap;display:flex;align-items:center;gap:10px;}
+.marquee-track span i{color:var(--gold);}
+
+/* ============================= ABOUT ============================= */
+.about-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:56px;align-items:start;}
+.profile-card{
+  background:var(--surface);border:1px solid var(--line);border-radius:var(--radius-lg);
+  padding:28px;box-shadow:var(--shadow-sm);position:sticky;top:110px;
+}
+.profile-photo{
+  width:100%;aspect-ratio:1/1;border-radius:var(--radius);overflow:hidden;margin-bottom:20px;
+  background:linear-gradient(160deg,var(--navy),var(--navy-2));display:flex;align-items:center;justify-content:center;color:var(--gold-bright);
+  position:relative;
+}
+.profile-photo .initials{font-family:var(--font-display);font-size:64px;font-weight:700;}
+.profile-photo::after{content:"";position:absolute;inset:0;background:repeating-linear-gradient(135deg,rgba(255,255,255,.04) 0 2px, transparent 2px 14px);}
+.profile-card h3{font-size:22px;}
+.profile-card .role{color:var(--gold);font-family:var(--font-mono);font-size:12.5px;text-transform:uppercase;letter-spacing:.06em;margin-top:6px;display:block;}
+.qual-list{margin-top:18px;display:flex;flex-direction:column;gap:10px;}
+.qual-list li{display:flex;gap:10px;font-size:13.5px;color:var(--ink-soft);align-items:flex-start;}
+.qual-list li i{color:var(--gold);margin-top:3px;}
+.profile-social{display:flex;gap:9px;margin-top:20px;}
+.profile-social a{width:36px;height:36px;border:1px solid var(--line);border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:14px;color:var(--ink-soft);transition:all .2s ease;}
+.profile-social a:hover{border-color:var(--gold);color:var(--gold);}
+
+.about-body h3{font-size:20px;margin-top:0;}
+.about-body p{color:var(--ink-soft);margin-top:12px;}
+.mv-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:36px;}
+.mv-card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:22px;}
+.mv-card i{color:var(--gold);font-size:20px;}
+.mv-card h4{margin-top:12px;font-size:16px;}
+.mv-card p{margin-top:8px;font-size:14px;color:var(--ink-soft);}
+.exp-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:36px;}
+.exp-stat{border:1px solid var(--line);border-radius:var(--radius);padding:18px;text-align:center;background:var(--surface);}
+.exp-stat strong{font-family:var(--font-mono);font-size:26px;color:var(--navy);}
+[data-theme="dark"] .exp-stat strong{color:var(--gold);}
+.exp-stat span{display:block;font-size:12px;color:var(--ink-faint);margin-top:4px;}
+
+/* ============================= COURSES ============================= */
+.course-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;}
+.course-card{
+  background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:26px 22px;
+  transition:transform .25s ease,box-shadow .25s ease,border-color .25s ease;position:relative;overflow:hidden;
+}
+.course-card:hover{transform:translateY(-6px);box-shadow:var(--shadow-md);border-color:var(--gold);}
+.course-num{font-family:var(--font-mono);font-size:12px;color:var(--ink-faint);}
+.course-icon{
+  width:48px;height:48px;border-radius:10px;background:var(--bg-alt);display:flex;align-items:center;justify-content:center;
+  color:var(--gold);font-size:19px;margin:12px 0 16px;
+}
+.course-card h4{font-size:17px;line-height:1.3;}
+.course-card p{font-size:13.5px;color:var(--ink-soft);margin-top:10px;}
+.course-fee{margin-top:16px;padding-top:14px;border-top:1px dashed var(--line);display:flex;justify-content:space-between;align-items:center;}
+.course-fee strong{font-family:var(--font-mono);color:var(--ink);font-size:15px;}
+.course-fee span{font-size:11px;color:var(--ink-faint);}
+
+.fee-table-wrap{margin-top:56px;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow-sm);}
+table{width:100%;border-collapse:collapse;font-size:14px;}
+thead th{
+  text-align:left;padding:16px 20px;background:var(--navy);color:#fff;font-family:var(--font-mono);
+  font-size:11.5px;text-transform:uppercase;letter-spacing:.06em;font-weight:600;
+}
+[data-theme="dark"] thead th{background:var(--surface-2);color:var(--gold);}
+tbody td{padding:15px 20px;border-bottom:1px solid var(--line);color:var(--ink-soft);}
+tbody tr:last-child td{border-bottom:none;}
+tbody td:first-child{color:var(--ink);font-weight:600;}
+tbody tr:hover{background:var(--bg-alt);}
+.tag{display:inline-block;padding:3px 9px;border-radius:20px;background:var(--bg-alt);font-size:11px;color:var(--ink-soft);font-family:var(--font-mono);}
+
+/* ============================= COURSE DETAIL PANEL ============================= */
+.course-card{cursor:pointer;}
+.course-card:focus-visible{outline:2px solid var(--gold);outline-offset:3px;}
+.course-detail-overlay{
+  position:fixed;inset:0;background:rgba(16,24,42,.45);z-index:1100;
+  opacity:0;pointer-events:none;transition:opacity .3s ease;
+}
+.course-detail-overlay.open{opacity:1;pointer-events:auto;}
+.course-detail-panel{
+  position:fixed;top:0;right:0;bottom:0;width:440px;max-width:92vw;background:var(--surface);
+  z-index:1101;box-shadow:var(--shadow-lg);transform:translateX(100%);
+  transition:transform .38s cubic-bezier(.16,1,.3,1);overflow-y:auto;padding:34px 30px 30px;
+}
+.course-detail-panel.open{transform:translateX(0);}
+.course-detail-close{
+  position:absolute;top:22px;right:22px;width:36px;height:36px;border-radius:50%;border:1px solid var(--line);
+  background:var(--surface-2);display:flex;align-items:center;justify-content:center;color:var(--ink-soft);
+  transition:border-color .2s ease,color .2s ease;
+}
+.course-detail-close:hover{border-color:var(--navy);color:var(--ink);}
+[data-theme="dark"] .course-detail-close:hover{border-color:var(--gold);}
+.course-detail-icon{
+  width:56px;height:56px;border-radius:12px;background:var(--bg-alt);display:flex;align-items:center;justify-content:center;
+  color:var(--gold);font-size:22px;margin-bottom:20px;
+}
+.course-detail-panel h3{font-size:23px;line-height:1.3;margin-bottom:12px;padding-right:38px;}
+.course-detail-desc{color:var(--ink-soft);font-size:14.5px;margin-bottom:24px;}
+.course-detail-meta{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:26px;}
+.course-detail-meta div{background:var(--bg-alt);border-radius:var(--radius-sm);padding:12px 14px;}
+.course-detail-meta span{display:block;font-size:11px;color:var(--ink-faint);font-family:var(--font-mono);text-transform:uppercase;letter-spacing:.05em;margin-bottom:4px;}
+.course-detail-meta strong{font-size:14px;color:var(--ink);}
+.course-detail-list{margin-bottom:28px;}
+.course-detail-list h5{font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:var(--ink-faint);font-family:var(--font-mono);margin-bottom:12px;}
+.course-detail-list ul{display:flex;flex-direction:column;}
+.course-detail-list li{display:flex;gap:10px;padding:9px 0;border-bottom:1px dashed var(--line);font-size:14px;color:var(--ink-soft);}
+.course-detail-list li:last-child{border-bottom:none;}
+.course-detail-list li i{color:var(--green);margin-top:3px;flex-shrink:0;}
+@media(max-width:640px){
+  .course-detail-panel{width:100%;max-width:100%;padding:28px 22px 24px;}
+}
+
+/* ============================= SCHEDULE ============================= */
+.schedule-layout{display:grid;grid-template-columns:1.4fr .9fr;gap:26px;}
+.timetable{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow-sm);}
+.zoom-card,.seminar-card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius-lg);padding:24px;box-shadow:var(--shadow-sm);}
+.zoom-card + .seminar-card{margin-top:22px;}
+.zoom-card h4,.seminar-card h4{font-size:16px;display:flex;align-items:center;gap:9px;}
+.zoom-card h4 i{color:var(--green);}
+.zoom-detail{display:flex;justify-content:space-between;padding:10px 0;border-bottom:1px dashed var(--line);font-size:13.5px;}
+.zoom-detail:last-of-type{border-bottom:none;}
+.zoom-detail span:first-child{color:var(--ink-faint);}
+.zoom-detail span:last-child{font-family:var(--font-mono);color:var(--ink);}
+.seminar-item{display:flex;gap:12px;padding:12px 0;border-bottom:1px solid var(--line);}
+.seminar-item:last-child{border-bottom:none;}
+.seminar-date{
+  flex-shrink:0;width:50px;height:50px;background:var(--bg-alt);border-radius:8px;display:flex;flex-direction:column;
+  align-items:center;justify-content:center;font-family:var(--font-mono);
+}
+.seminar-date strong{font-size:16px;line-height:1;}
+.seminar-date span{font-size:9px;color:var(--ink-faint);text-transform:uppercase;}
+.seminar-item h5{font-size:13.5px;font-weight:600;}
+.seminar-item p{font-size:12px;color:var(--ink-faint);margin-top:3px;}
+
+/* ============================= REGISTRATION ============================= */
+.reg-wrap{display:grid;grid-template-columns:.85fr 1.15fr;gap:0;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow-md);}
+.reg-side{background:var(--navy);color:#fff;padding:48px 38px;position:relative;overflow:hidden;}
+.reg-side::before{content:"";position:absolute;inset:0;background-image:repeating-linear-gradient(to bottom,transparent,transparent 27px,rgba(255,255,255,.06) 28px);}
+.reg-side h3{color:#fff;font-size:24px;position:relative;}
+.reg-side p{color:rgba(255,255,255,.72);margin-top:14px;font-size:14.5px;position:relative;}
+.reg-steps{margin-top:30px;position:relative;}
+.reg-steps li{display:flex;gap:12px;margin-bottom:18px;font-size:13.5px;color:rgba(255,255,255,.85);}
+.reg-steps li i{color:var(--gold-bright);margin-top:2px;}
+.reg-form{padding:48px 38px;}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+.field{margin-bottom:18px;}
+.field label{display:block;font-size:12.5px;font-weight:600;color:var(--ink-soft);margin-bottom:7px;}
+.field input,.field select,.field textarea{
+  width:100%;padding:12px 14px;border:1px solid var(--line-strong);border-radius:8px;background:var(--bg);
+  color:var(--ink);font-family:var(--font-body);font-size:14.5px;transition:border-color .2s ease,box-shadow .2s ease;
+}
+.field input:focus,.field select:focus,.field textarea:focus{border-color:var(--gold);box-shadow:0 0 0 3px color-mix(in srgb, var(--gold) 20%, transparent);outline:none;}
+.form-note{font-size:12px;color:var(--ink-faint);margin-top:10px;display:flex;gap:6px;align-items:flex-start;}
+.form-success{display:none;text-align:center;padding:30px 10px;}
+.form-success.show{display:block;}
+.form-success i{font-size:40px;color:var(--green);}
+.form-success h4{margin-top:14px;}
+.form-success p{color:var(--ink-soft);margin-top:8px;font-size:14px;}
+
+/* ============================= DASHBOARD ============================= */
+.dash-box{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius-lg);box-shadow:var(--shadow-md);overflow:hidden;}
+.login-panel{max-width:420px;margin:0 auto;padding:44px 36px;text-align:center;}
+.login-panel i.lock-ic{font-size:30px;color:var(--gold);}
+.login-panel h3{margin-top:14px;}
+.login-panel p{color:var(--ink-soft);font-size:13.5px;margin-top:8px;}
+.login-panel .field{text-align:left;margin-top:20px;}
+.demo-hint{margin-top:16px;font-size:12px;font-family:var(--font-mono);color:var(--ink-faint);background:var(--bg-alt);padding:10px;border-radius:6px;}
+.dash-app{display:none;}
+.dash-app.show{display:grid;grid-template-columns:220px 1fr;min-height:520px;}
+.dash-side{background:var(--bg-alt);border-right:1px solid var(--line);padding:26px 16px;}
+.dash-user{display:flex;align-items:center;gap:10px;padding:0 6px 20px;border-bottom:1px solid var(--line);margin-bottom:16px;}
+.dash-user .av{width:38px;height:38px;border-radius:50%;background:var(--navy);color:var(--gold-bright);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:14px;}
+.dash-user strong{font-size:13.5px;display:block;}
+.dash-user span{font-size:11px;color:var(--ink-faint);}
+.dash-nav-item{
+  display:flex;align-items:center;gap:10px;padding:11px 12px;border-radius:8px;font-size:13.5px;color:var(--ink-soft);
+  cursor:pointer;margin-bottom:4px;transition:all .18s ease;
+}
+.dash-nav-item i{width:16px;text-align:center;}
+.dash-nav-item:hover{background:var(--surface);color:var(--ink);}
+.dash-nav-item.active{background:var(--navy);color:#fff;}
+[data-theme="dark"] .dash-nav-item.active{background:var(--gold);color:#1a1300;}
+.dash-nav-item.logout{margin-top:16px;color:var(--red);}
+.dash-main{padding:30px 32px;}
+.dash-pane{display:none;}
+.dash-pane.active{display:block;animation:paneIn .35s ease;}
+@keyframes paneIn{from{opacity:0;transform:translateY(8px);}to{opacity:1;transform:translateY(0);}}
+.dash-pane h4{font-size:18px;margin-bottom:16px;}
+.resource-row{display:flex;align-items:center;justify-content:space-between;padding:13px 16px;border:1px solid var(--line);border-radius:8px;margin-bottom:10px;}
+.resource-row .rl{display:flex;align-items:center;gap:12px;font-size:13.5px;}
+.resource-row .rl i{color:var(--gold);width:18px;}
+.resource-row .rmeta{font-size:11px;color:var(--ink-faint);font-family:var(--font-mono);}
+.progress-block{margin-bottom:18px;}
+.progress-block .pl{display:flex;justify-content:space-between;font-size:13px;margin-bottom:7px;}
+.progress-bar{height:8px;border-radius:20px;background:var(--bg-alt);overflow:hidden;}
+.progress-bar i{display:block;height:100%;background:linear-gradient(90deg,var(--gold),var(--green));border-radius:20px;transition:width 1s ease;}
+.upload-zone{border:1.5px dashed var(--line-strong);border-radius:10px;padding:30px;text-align:center;color:var(--ink-faint);font-size:13.5px;cursor:pointer;transition:border-color .2s ease;}
+.upload-zone:hover{border-color:var(--gold);color:var(--gold);}
+.upload-list{margin-top:14px;}
+.upload-list li{display:flex;justify-content:space-between;font-size:13px;padding:9px 12px;background:var(--bg-alt);border-radius:6px;margin-bottom:6px;}
+
+/* ============================= AI TUTOR ============================= */
+.tutor-wrap{display:grid;grid-template-columns:.8fr 1.2fr;gap:22px;}
+.tutor-info h3{font-size:20px;}
+.tutor-info p{color:var(--ink-soft);margin-top:12px;font-size:14.5px;}
+.tutor-chip-list{margin-top:20px;display:flex;flex-direction:column;gap:10px;}
+.tutor-chip{
+  font-size:13px;color:var(--ink-soft);border:1px solid var(--line);border-radius:8px;padding:10px 13px;cursor:pointer;
+  transition:all .2s ease;display:flex;align-items:center;gap:9px;background:var(--surface);
+}
+.tutor-chip:hover{border-color:var(--gold);color:var(--ink);}
+.tutor-chip i{color:var(--gold);}
+.chat-box{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius-lg);box-shadow:var(--shadow-md);display:flex;flex-direction:column;height:520px;}
+.chat-head{display:flex;align-items:center;gap:10px;padding:16px 20px;border-bottom:1px solid var(--line);}
+.chat-head .dot{width:9px;height:9px;border-radius:50%;background:var(--green);box-shadow:0 0 0 3px color-mix(in srgb,var(--green) 25%,transparent);}
+.chat-head strong{font-size:14px;}
+.chat-head span{font-size:11.5px;color:var(--ink-faint);display:block;}
+.chat-body{flex:1;overflow-y:auto;padding:20px;display:flex;flex-direction:column;gap:14px;}
+.msg{max-width:78%;padding:11px 15px;border-radius:12px;font-size:13.8px;line-height:1.55;}
+.msg.bot{background:var(--bg-alt);align-self:flex-start;border-bottom-left-radius:3px;}
+.msg.user{background:var(--navy);color:#fff;align-self:flex-end;border-bottom-right-radius:3px;}
+[data-theme="dark"] .msg.user{background:var(--gold);color:#1a1300;}
+.chat-input-row{display:flex;gap:10px;padding:16px;border-top:1px solid var(--line);}
+.chat-input-row input{flex:1;padding:12px 14px;border-radius:8px;border:1px solid var(--line-strong);background:var(--bg);color:var(--ink);font-size:14px;}
+.chat-input-row button{width:44px;height:44px;border-radius:8px;background:var(--navy);color:#fff;border:none;flex-shrink:0;font-size:15px;}
+[data-theme="dark"] .chat-input-row button{background:var(--gold);color:#1a1300;}
+.typing-dots{display:flex;gap:4px;padding:4px 0;}
+.typing-dots span{width:6px;height:6px;background:var(--ink-faint);border-radius:50%;animation:blink 1.2s infinite ease-in-out;}
+.typing-dots span:nth-child(2){animation-delay:.2s;}
+.typing-dots span:nth-child(3){animation-delay:.4s;}
+@keyframes blink{0%,80%,100%{opacity:.25;}40%{opacity:1;}}
+
+/* ============================= RESOURCES ============================= */
+.resource-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;}
+.resource-card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:22px;text-align:center;transition:all .2s ease;}
+.resource-card:hover{transform:translateY(-4px);box-shadow:var(--shadow-md);border-color:var(--gold);}
+.resource-card i{font-size:26px;color:var(--gold);}
+.resource-card h5{margin-top:12px;font-size:14.5px;}
+.resource-card p{font-size:12px;color:var(--ink-faint);margin-top:6px;}
+.resource-card .btn{margin-top:14px;}
+
+/* ============================= REVIEWS ============================= */
+.review-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;}
+.review-card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:24px;}
+.review-stars{color:var(--gold);font-size:13px;letter-spacing:2px;}
+.review-card p.quote{margin-top:14px;font-size:14px;color:var(--ink-soft);line-height:1.6;}
+.review-who{display:flex;align-items:center;gap:11px;margin-top:18px;}
+.review-who .av{width:38px;height:38px;border-radius:50%;background:var(--navy);color:var(--gold-bright);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:13px;flex-shrink:0;}
+.review-who strong{font-size:13.5px;display:block;}
+.review-who span{font-size:11.5px;color:var(--ink-faint);}
+
+/* ============================= CONTACT ============================= */
+.contact-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:20px;}
+.contact-card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:26px;text-align:center;transition:all .2s ease;}
+.contact-card:hover{border-color:var(--gold);transform:translateY(-4px);}
+.contact-card i{font-size:22px;color:var(--gold);width:52px;height:52px;border-radius:50%;background:var(--bg-alt);display:flex;align-items:center;justify-content:center;margin:0 auto;}
+.contact-card h5{margin-top:14px;font-size:14.5px;}
+.contact-card p{font-size:13px;color:var(--ink-soft);margin-top:6px;font-family:var(--font-mono);}
+.social-row{display:flex;justify-content:center;gap:12px;margin-top:44px;}
+.social-row a{width:42px;height:42px;border:1px solid var(--line);border-radius:10px;display:flex;align-items:center;justify-content:center;color:var(--ink-soft);transition:all .2s ease;}
+.social-row a:hover{border-color:var(--gold);color:var(--gold);transform:translateY(-3px);}
+
+/* ============================= DEV / ADMIN NOTE ============================= */
+.dev-note{background:var(--surface-2);border:1px dashed var(--line-strong);border-radius:var(--radius);padding:26px 28px;margin-top:20px;}
+.dev-note h5{font-size:13.5px;display:flex;align-items:center;gap:8px;color:var(--ink);}
+.dev-note h5 i{color:var(--gold);}
+.dev-note ul{margin-top:12px;display:flex;flex-direction:column;gap:8px;}
+.dev-note li{font-size:12.8px;color:var(--ink-soft);display:flex;gap:8px;}
+.dev-note li i{color:var(--green);margin-top:3px;font-size:11px;}
+
+/* ============================= FOOTER ============================= */
+footer{background:var(--navy);color:rgba(255,255,255,.75);padding:60px 0 26px;position:relative;overflow:hidden;}
+footer::before{content:"";position:absolute;inset:0;background-image:repeating-linear-gradient(to bottom,transparent,transparent 27px,rgba(255,255,255,.045) 28px);}
+.footer-grid{display:grid;grid-template-columns:1.3fr 1fr 1fr 1fr;gap:36px;position:relative;}
+.footer-grid h5{color:#fff;font-size:13.5px;text-transform:uppercase;letter-spacing:.06em;font-family:var(--font-mono);margin-bottom:16px;}
+.footer-grid p{font-size:13.5px;line-height:1.7;color:rgba(255,255,255,.6);}
+.footer-grid li{margin-bottom:9px;}
+.footer-grid a{font-size:13.5px;color:rgba(255,255,255,.65);transition:color .2s ease;}
+.footer-grid a:hover{color:var(--gold-bright);}
+.footer-bottom{display:flex;justify-content:space-between;align-items:center;margin-top:48px;padding-top:22px;border-top:1px solid rgba(255,255,255,.12);font-size:12.5px;color:rgba(255,255,255,.5);position:relative;flex-wrap:wrap;gap:10px;}
+
+/* ============================= FLOATING WHATSAPP ============================= */
+.float-wa{
+  position:fixed;bottom:24px;right:24px;z-index:900;width:58px;height:58px;border-radius:50%;background:#25D366;
+  display:flex;align-items:center;justify-content:center;color:#06210f;font-size:26px;box-shadow:var(--shadow-lg);
+  animation:pulse 2.6s infinite;
+}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(37,211,102,.5);}70%{box-shadow:0 0 0 14px rgba(37,211,102,0);}100%{box-shadow:0 0 0 0 rgba(37,211,102,0);}}
+
+/* ============================= SCROLL REVEAL ============================= */
+.reveal{opacity:0;transform:translateY(26px);transition:opacity .7s ease,transform .7s ease;}
+.reveal.in{opacity:1;transform:translateY(0);}
+
+/* ============================= MOBILE NAV ============================= */
+.mobile-nav{
+  position:fixed;top:var(--header-h);left:0;right:0;bottom:0;background:var(--bg);z-index:999;
+  padding:30px 24px;display:none;flex-direction:column;gap:6px;overflow-y:auto;
+}
+.mobile-nav.open{display:flex;}
+.mobile-nav a{padding:15px 6px;font-size:16px;font-weight:600;border-bottom:1px solid var(--line);color:var(--ink);}
+.mobile-nav .btn{margin-top:20px;}
+
+/* ============================= RESPONSIVE ============================= */
+@media (max-width:1080px){
+  .course-grid{grid-template-columns:repeat(2,1fr);}
+  .resource-grid{grid-template-columns:repeat(2,1fr);}
+  .review-grid{grid-template-columns:repeat(2,1fr);}
+  .contact-grid{grid-template-columns:1fr 1fr;}
+  .footer-grid{grid-template-columns:1fr 1fr;}
+}
+@media (max-width:940px){
+  nav.main-nav{display:none;}
+  .burger{display:flex;}
+  .hero-grid{grid-template-columns:1fr;}
+  .ledger-card{max-width:420px;margin:0 auto;}
+  .about-grid{grid-template-columns:1fr;}
+  .profile-card{position:static;max-width:340px;margin:0 auto;}
+  .schedule-layout{grid-template-columns:1fr;}
+  .reg-wrap{grid-template-columns:1fr;}
+  .tutor-wrap{grid-template-columns:1fr;}
+  .dash-app.show{grid-template-columns:1fr;}
+  .dash-side{display:flex;overflow-x:auto;gap:4px;padding:14px;border-right:none;border-bottom:1px solid var(--line);}
+  .dash-user{display:none;}
+  .dash-nav-item{white-space:nowrap;}
+}
+@media (max-width:680px){
+  .course-grid,.resource-grid,.review-grid,.contact-grid{grid-template-columns:1fr;}
+  .footer-grid{grid-template-columns:1fr;}
+  .form-row{grid-template-columns:1fr;}
+  .exp-stats{grid-template-columns:1fr;}
+  .section-pad{padding:64px 0;}
+  .mv-grid{grid-template-columns:1fr;}
+}
+@media (prefers-reduced-motion: reduce){
+  *{animation-duration:.01ms !important;animation-iteration-count:1 !important;transition-duration:.01ms !important;scroll-behavior:auto !important;}
+}
+</style>
+</head>
+<body>
+
+<!-- ============================= HEADER ============================= -->
+<header>
+  <div class="container nav-wrap">
+    <a href="#home" class="brand">
+      <div class="brand-mark">EA</div>
+      <div class="brand-text">
+        <strong data-en="Easy Accounting" data-ta="Easy Accounting">Easy Accounting</strong>
+        <span data-en="With Pradeepan" data-ta="With Pradeepan">With Pradeepan</span>
+      </div>
+    </a>
+    <nav class="main-nav">
+      <a href="#home" data-en="Home" data-ta="முகப்பு">Home</a>
+      <a href="#about" data-en="About" data-ta="எங்களை பற்றி">About</a>
+      <a href="#courses" data-en="Courses" data-ta="பாடநெறிகள்">Courses</a>
+      <a href="#schedule" data-en="Schedule" data-ta="கால அட்டவணை">Schedule</a>
+      <a href="#dashboard" data-en="Dashboard" data-ta="டாஷ்போர்டு">Dashboard</a>
+      <a href="#ai-tutor" data-en="AI Tutor" data-ta="AI ஆசிரியர்">AI Tutor</a>
+      <a href="#resources" data-en="Resources" data-ta="வளங்கள்">Resources</a>
+      <a href="#contact" data-en="Contact" data-ta="தொடர்பு">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <div class="lang-toggle" role="group" aria-label="Language">
+        <button type="button" id="lang-en" class="active" onclick="setLang('en')">EN</button>
+        <button type="button" id="lang-ta" onclick="setLang('ta')">தமிழ்</button>
+      </div>
+      <button class="icon-toggle" id="theme-toggle" onclick="toggleTheme()" aria-label="Toggle dark mode">
+        <i class="fa-solid fa-moon"></i>
+      </button>
+      <a class="btn btn-primary btn-sm" href="#register" data-en="Register" data-ta="பதிவு">Register</a>
+      <button class="burger" id="burger" onclick="toggleMobileNav()" aria-label="Menu"><i class="fa-solid fa-bars"></i></button>
+    </div>
+  </div>
+  <div class="mobile-nav" id="mobile-nav">
+    <a href="#home" onclick="return navTap(event,'home')" data-en="Home" data-ta="முகப்பு">Home</a>
+    <a href="#about" onclick="return navTap(event,'about')" data-en="About" data-ta="எங்களை பற்றி">About</a>
+    <a href="#courses" onclick="return navTap(event,'courses')" data-en="Courses" data-ta="பாடநெறிகள்">Courses</a>
+    <a href="#schedule" onclick="return navTap(event,'schedule')" data-en="Schedule" data-ta="கால அட்டவணை">Schedule</a>
+    <a href="#dashboard" onclick="return navTap(event,'dashboard')" data-en="Dashboard" data-ta="டாஷ்போர்டு">Dashboard</a>
+    <a href="#ai-tutor" onclick="return navTap(event,'ai-tutor')" data-en="AI Tutor" data-ta="AI ஆசிரியர்">AI Tutor</a>
+    <a href="#resources" onclick="return navTap(event,'resources')" data-en="Resources" data-ta="வளங்கள்">Resources</a>
+    <a href="#reviews" onclick="return navTap(event,'reviews')" data-en="Reviews" data-ta="மதிப்புரைகள்">Reviews</a>
+    <a href="#contact" onclick="return navTap(event,'contact')" data-en="Contact" data-ta="தொடர்பு">Contact</a>
+    <a class="btn btn-primary btn-block" href="#register" onclick="return navTap(event,'register')" data-en="Register Now" data-ta="இப்போது பதிவு செய்க">Register Now</a>
+  </div>
+</header>
+
+<!-- ============================= HERO ============================= -->
+<section class="hero" id="home">
+  <div class="container hero-grid">
+    <div class="hero-copy">
+      <div class="section-eyebrow" data-en="A/L Accounting &amp; Business Studies" data-ta="உயர்தர கணக்கியல் &amp; வணிகக் கல்வி">A/L Accounting &amp; Business Studies</div>
+      <h1 data-en='Learn Smart. Score Higher. Succeed.' data-ta='புத்திசாலித்தனமாக கற்போம். உயர் மதிப்பெண் பெறுவோம். வெற்றி பெறுவோம்.'>Learn Smart. Score Higher. <em>Succeed.</em></h1>
+      <p class="lede" data-en="Live online A/L Accounting and Business Studies classes taught by Yoganathan Pradeepan — theory, paper discussions, revision and model-paper practice, built for Sri Lankan students, in Tamil and English medium." data-ta="Yoganathan Pradeepan அவர்களால் நடத்தப்படும் நேரடி ஆன்லைன் உயர்தர கணக்கியல் மற்றும் வணிகக் கல்வி வகுப்புகள் — கோட்பாடு, வினாத்தாள் விவாதம், திருப்புதல் மற்றும் மாதிரி வினாத்தாள் பயிற்சி, இலங்கை மாணவர்களுக்காக தமிழ் மற்றும் ஆங்கில மொழிகளில்.">Live online A/L Accounting and Business Studies classes taught by Yoganathan Pradeepan — theory, paper discussions, revision and model-paper practice, built for Sri Lankan students, in Tamil and English medium.</p>
+      <div class="hero-ctas">
+        <a href="#register" class="btn btn-primary"><i class="fa-solid fa-pen-nib"></i> <span data-en="Register Now" data-ta="இப்போது பதிவு செய்க">Register Now</span></a>
+        <a href="https://wa.me/94741605284?text=Hello%2C%20I'm%20interested%20in%20Easy%20Accounting%20With%20Pradeepan%20classes." target="_blank" rel="noopener" class="btn btn-whatsapp"><i class="fa-brands fa-whatsapp"></i> <span data-en="Chat on WhatsApp" data-ta="WhatsApp இல் அரட்டை">Chat on WhatsApp</span></a>
+      </div>
+      <div class="hero-meta">
+        <div><strong>200+</strong><span data-en="Students Guided" data-ta="வழிகாட்டப்பட்ட மாணவர்கள்">Students Guided</span></div>
+        <div><strong>98%</strong><span data-en="A/B Pass Rate" data-ta="A/B தேர்ச்சி விகிதம்">A/B Pass Rate</span></div>
+        <div><strong>EN / TA</strong><span data-en="Bilingual Classes" data-ta="இருமொழி வகுப்புகள்">Bilingual Classes</span></div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="ledger-card">
+        <div class="ledger-badge"><span>A+</span><small data-en="RESULT" data-ta="முடிவு">RESULT</small></div>
+        <div class="ledger-top">
+          <h4 data-en="Student Progress Ledger" data-ta="மாணவர் முன்னேற்ற ஏடு">Student Progress Ledger</h4>
+          <span class="stamp" data-en="ON TRACK" data-ta="சரியான பாதையில்">ON TRACK</span>
+        </div>
+        <div class="ledger-cols">
+          <div class="ledger-col">
+            <h5 data-en="Debit — Your Effort" data-ta="பற்று — உங்கள் முயற்சி">Debit — Your Effort</h5>
+            <div class="ledger-row"><span data-en="Live Classes" data-ta="நேரடி வகுப்புகள்">Live Classes</span><span>48 hrs</span></div>
+            <div class="ledger-row"><span data-en="Revision" data-ta="திருப்புதல்">Revision</span><span>32 hrs</span></div>
+            <div class="ledger-row"><span data-en="MCQ Practice" data-ta="MCQ பயிற்சி">MCQ Practice</span><span>620 qs</span></div>
+          </div>
+          <div class="ledger-col">
+            <h5 data-en="Credit — Your Results" data-ta="வரவு — உங்கள் முடிவுகள்">Credit — Your Results</h5>
+            <div class="ledger-row"><span data-en="Model Papers" data-ta="மாதிரி வினாத்தாள்">Model Papers</span><span>12/12</span></div>
+            <div class="ledger-row"><span data-en="Avg. Score" data-ta="சராசரி மதிப்பெண்">Avg. Score</span><span>84%</span></div>
+            <div class="ledger-row"><span data-en="Grade" data-ta="தரம்">Grade</span><span>A</span></div>
+          </div>
+        </div>
+        <div class="ledger-total"><span data-en="Balance" data-ta="மீதி">Balance</span><span data-en="Fully Balanced ✓" data-ta="முழுமையாக சமன் ✓">Fully Balanced ✓</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="marquee-wrap">
+  <div class="marquee-track" id="marquee">
+    <span><i class="fa-solid fa-check"></i> A/L Accounting Theory</span>
+    <span><i class="fa-solid fa-check"></i> Paper Discussion Classes</span>
+    <span><i class="fa-solid fa-check"></i> Revision Classes</span>
+    <span><i class="fa-solid fa-check"></i> Model Papers &amp; MCQ Practice</span>
+    <span><i class="fa-solid fa-check"></i> Live Zoom Sessions</span>
+    <span><i class="fa-solid fa-check"></i> Tamil &amp; English Medium</span>
+    <span><i class="fa-solid fa-check"></i> AI Accounting Tutor</span>
+  </div>
+</div>
+
+<!-- ============================= ABOUT ============================= -->
+<section class="section-pad" id="about">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="section-eyebrow" data-en="About the Teacher" data-ta="ஆசிரியர் பற்றி">About the Teacher</div>
+      <h2 data-en="Meet Yoganathan Pradeepan" data-ta="Yoganathan Pradeepan அவர்களை சந்திக்கவும்">Meet Yoganathan Pradeepan</h2>
+      <p data-en="A dedicated accounting educator helping A/L students turn theory into exam-ready confidence." data-ta="கோட்பாட்டை தேர்வுக்கான நம்பிக்கையாக மாற்ற உயர்தர மாணவர்களுக்கு உதவும் அர்ப்பணிப்புள்ள கணக்கியல் ஆசிரியர்.">A dedicated accounting educator helping A/L students turn theory into exam-ready confidence.</p>
+    </div>
+    <div class="about-grid">
+      <div class="profile-card reveal">
+        <div class="image">
+    <img src="image/hello.jpeg" alt="hello" class="profile-img">
+</div>
+        <h3>Y. Pradeepan</h3>
+        <span class="role" data-en="Founder &amp; Lead Educator" data-ta="நிறுவனர் &amp; முதன்மை ஆசிரியர்">Founder &amp; Lead Educator</span>
+        <ul class="qual-list">
+          <li><i class="fa-solid fa-graduation-cap"></i> <span data-en="B.Sc. (Honours) Undergraduate" data-ta="B.Sc. (Honours) பட்டப்படிப்பு மாணவர்">B.Sc. (Honours) Undergraduate</span></li>
+          <li><i class="fa-solid fa-award"></i> <span data-en="CBA – CA Sri Lanka" data-ta="CBA – CA Sri Lanka">CBA – CA Sri Lanka</span></li>
+          <li><i class="fa-solid fa-chalkboard-user"></i> <span data-en="Specialist in A/L Accounting &amp; Business Studies" data-ta="உயர்தர கணக்கியல் &amp; வணிகக் கல்வி நிபுணர்">Specialist in A/L Accounting &amp; Business Studies</span></li>
+        </ul>
+        <div class="profile-social">
+          <a href="https://wa.me/94741605284" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="mailto:centereducation091@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+          <a href="https://www.facebook.com/y.pradeepan.pradeepan" target="_blank" rel="noopener"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/yoganathan_pradeepan?igsh=Mzg2ZXlmbTNjenJs" target="_blank" rel="noopener"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="about-body reveal">
+        <h3 data-en="Qualifications &amp; Teaching Experience" data-ta="தகுதிகள் &amp; கற்பித்தல் அனுபவம்">Qualifications &amp; Teaching Experience</h3>
+        <p data-en="Y. Pradeepan holds a B.Sc. (Honours) undergraduate qualification and is a CBA (CA Sri Lanka) candidate, combining strong academic grounding with practical accounting knowledge. Easy Accounting With Pradeepan was founded to give A/L students — especially those in Tamil medium — clear, structured, exam-focused guidance in Accounting and Business Studies." data-ta="Y. Pradeepan அவர்கள் B.Sc. (Honours) பட்டப்படிப்பு தகுதியையும், CBA (CA Sri Lanka) வேட்பாளர் தகுதியையும் கொண்டவர், வலுவான கல்வி அடித்தளத்தையும் நடைமுறை கணக்கியல் அறிவையும் இணைத்துள்ளார். உயர்தர மாணவர்களுக்கு — குறிப்பாக தமிழ் மொழி மூலம் கற்பவர்களுக்கு — தெளிவான, கட்டமைக்கப்பட்ட, தேர்வு சார்ந்த வழிகாட்டுதலை வழங்குவதற்காக Easy Accounting With Pradeepan நிறுவப்பட்டது.">Y. Pradeepan holds a B.Sc. (Honours) undergraduate qualification and is a CBA (CA Sri Lanka) candidate, combining strong academic grounding with practical accounting knowledge. Easy Accounting With Pradeepan was founded to give A/L students — especially those in Tamil medium — clear, structured, exam-focused guidance in Accounting and Business Studies.</p>
+        <div class="exp-stats">
+          <div class="exp-stat"><strong>2+</strong><span data-en="Years Teaching" data-ta="ஆண்டுகள் கற்பித்தல்">Years Teaching</span></div>
+          <div class="exp-stat"><strong>200+</strong><span data-en="Students Taught" data-ta="கற்பிக்கப்பட்ட மாணவர்கள்">Students Taught</span></div>
+          <div class="exp-stat"><strong>98%</strong><span data-en="Pass Rate" data-ta="தேர்ச்சி விகிதம்">Pass Rate</span></div>
+        </div>
+        <div class="mv-grid">
+          <div class="mv-card">
+            <i class="fa-solid fa-bullseye"></i>
+            <h4 data-en="Our Mission" data-ta="எங்கள் நோக்கம்">Our Mission</h4>
+            <p data-en="To make Accounting simple, logical and enjoyable — so every A/L student can approach the exam with confidence, not fear." data-ta="கணக்கியலை எளிமையாகவும், தர்க்கரீதியாகவும், மகிழ்ச்சியானதாகவும் ஆக்குவது — ஒவ்வொரு உயர்தர மாணவரும் பயமின்றி தேர்வை நம்பிக்கையுடன் எதிர்கொள்ள.">To make Accounting simple, logical and enjoyable — so every A/L student can approach the exam with confidence, not fear.</p>
+          </div>
+          <div class="mv-card">
+            <i class="fa-solid fa-lightbulb"></i>
+            <h4 data-en="Our Vision" data-ta="எங்கள் தொலைநோக்கு">Our Vision</h4>
+            <p data-en="To become Sri Lanka's most trusted online home for A/L Accounting and Business Studies, in both Tamil and English." data-ta="தமிழ் மற்றும் ஆங்கிலம் இரண்டிலும், உயர்தர கணக்கியல் மற்றும் வணிகக் கல்விக்கான இலங்கையின் மிகவும் நம்பகமான ஆன்லைன் இல்லமாக மாறுவது.">To become Sri Lanka's most trusted online home for A/L Accounting and Business Studies, in both Tamil and English.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================= COURSES ============================= -->
+<section class="section-pad" id="courses" style="background:var(--bg-alt);">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="section-eyebrow" data-en="Courses" data-ta="பாடநெறிகள்">Courses</div>
+      <h2 data-en="Every Stage of Your A/L Journey" data-ta="உங்கள் உயர்தர பயணத்தின் ஒவ்வொரு கட்டமும்">Every Stage of Your A/L Journey</h2>
+      <p data-en="From first theory class to final revision — structured courses that build real exam skill." data-ta="முதல் கோட்பாட்டு வகுப்பிலிருந்து இறுதி திருப்புதல் வரை — உண்மையான தேர்வுத் திறனை உருவாக்கும் கட்டமைக்கப்பட்ட பாடநெறிகள்.">From first theory class to final revision — structured courses that build real exam skill.</p>
+    </div>
+    <div class="course-grid">
+      <div class="course-card reveal" onclick="openCourseDetail('theory')" tabindex="0" role="button" aria-label="View Accounting Theory course details" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openCourseDetail('theory');}">
+        <span class="course-num">01</span>
+        <div class="course-icon"><i class="fa-solid fa-book-open"></i></div>
+        <h4 data-en="A/L Accounting Theory Classes" data-ta="உயர்தர கணக்கியல் கோட்பாட்டு வகுப்புகள்">A/L Accounting Theory Classes</h4>
+        <p data-en="Complete syllabus coverage, concept by concept, with worked examples." data-ta="ஒவ்வொரு கருத்தையும் தீர்க்கப்பட்ட உதாரணங்களுடன் முழுமையான பாடத்திட்ட விளக்கம்.">Complete syllabus coverage, concept by concept, with worked examples.</p>
+        <div class="course-fee"><strong>Rs. 2,000<span data-en="/month" data-ta="/மாதம்">/month</span></strong><span data-en="Weekly" data-ta="வாராந்திரம்">Weekly</span></div>
+      </div>
+      <div class="course-card reveal" onclick="openCourseDetail('discussion')" tabindex="0" role="button" aria-label="View Paper Discussion course details" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openCourseDetail('discussion');}">
+        <span class="course-num">02</span>
+        <div class="course-icon"><i class="fa-solid fa-comments"></i></div>
+        <h4 data-en="A/L Paper Discussion Classes" data-ta="உயர்தர வினாத்தாள் விவாத வகுப்புகள் ">A/L Paper Discussion Classes</h4>
+        <p data-en="Past paper walkthroughs with marking-scheme level answer techniques." data-ta="மதிப்பீட்டு திட்ட அளவிலான விடையளிக்கும் நுட்பங்களுடன் பழைய வினாத்தாள் விளக்கம்.">Past paper walkthroughs with marking-scheme level answer techniques.</p>
+        <div class="course-fee"><strong>Rs. 1,500<span data-en="/month" data-ta="/மாதம்">/month</span></strong><span data-en="Weekly" data-ta="வாராந்திரம்">Weekly</span></div>
+      </div>
+      <div class="course-card reveal" onclick="openCourseDetail('revision')" tabindex="0" role="button" aria-label="View Revision course details" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openCourseDetail('revision');}">
+        <span class="course-num">03</span>
+        <div class="course-icon"><i class="fa-solid fa-rotate"></i></div>
+        <h4 data-en="2026 Seminar Classes" data-ta="திருப்புதல் வகுப்புகள்">Revision Classes</h4>
+        <p data-en="Fast-paced full-syllabus revision closer to the exam date." data-ta="பரீட்சைக்குக் கூடுக  அருகாமே முழு பாடத்திட்டத்தை விரைவில் மதிப்பாய்வு செய்யுதல்.">Fast-paced full-syllabus revision closer to the exam date.</p>
+        <div class="course-fee"><strong>Rs. 500<span data-en="/month" data-ta="/மாதம்">/month</span></strong><span data-en="Seasonal" data-ta="பருவகாலம்">Seasonal</span></div>
+      </div>
+     <div class="course-card reveal" onclick="openCourseDetail('aat')" tabindex="0" role="button" aria-label="View AAT course details"
+     onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openCourseDetail('aat');}">
+
+    <span class="course-num">04</span>
+
+    <div class="course-icon">
+        <i class="fa-solid fa-graduation-cap"></i>
+    </div>
+
+    <h4 data-en="AAT Papers Class & Theory Class"
+        data-ta="AAT வினாத்தாள் வகுப்பு மற்றும் கோட்பாட்டு வகுப்பு">
+        AAT Papers Class &amp; Theory Class
+    </h4>
+
+    <p data-en="Comprehensive AAT theory lessons with model papers, past papers, and MCQ practice to help students achieve excellent examination results."
+       data-ta="AAT கோட்பாட்டு பாடங்கள், மாதிரி வினாத்தாள்கள், கடந்தகால வினாத்தாள்கள் மற்றும் பல்தேர்வு வினாக்கள் மூலம் சிறந்த தேர்வு முடிவுகளை பெற உதவும் வகுப்புகள்.">
+        Comprehensive AAT theory lessons with model papers, past papers, and MCQ practice.
+    </p>
+
+    <div class="course-fee">
+        <strong>Rs. 3,000
+            <span data-en="/month" data-ta="/மாதம்">/month</span>
+        </strong>
+        <span data-en="Bi-weekly" data-ta="இரு வாரத்திற்கு ஒருமுறை">
+            Bi-weekly
+        </span>
+    </div>
+
+</div>
+    </div>
+
+    <div class="fee-table-wrap reveal">
+      <table>
+        <thead>
+          <tr>
+            <th data-en="Course" data-ta="பாடநெறி">Course</th>
+            <th data-en="Schedule" data-ta="அட்டவணை">Schedule</th>
+            <th data-en="Duration" data-ta="கால அளவு">Duration</th>
+            <th data-en="Medium" data-ta="மொழி மூலம்">Medium</th>
+            <th data-en="Fee" data-ta="கட்டணம்">Fee</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td data-en="2027 Accounting Theory" data-ta="2027 கணக்கியல் கோட்பாடு">2027 Accounting Theory</td>
+            <td>Sunday 6.00pm<br> Thursday 8.30pm<br> Friday 9.30pm</td>
+            <td>24 months</td>
+            <td><span class="tag">EN / TA</span></td>
+            <td>Rs. 2,000 <span data-en="/mo" data-ta="/மா">/mo</span></td>
+          </tr>
+          <tr>
+            <td data-en="2027 Paper Discussion" data-ta="2027 வினாத்தாள் விவாதம்">2027 Paper Discussion</td>
+            <td>Monday 8.30pm<br> Wednesday 8.30pm<br> Saturday 8.30pm</td>
+            <td>24 months</td>
+            <td><span class="tag">EN / TA</span></td>
+            <td>Rs. 1,500 <span data-en="/mo" data-ta="/மா">/mo</span></td>
+          </tr>
+           <tr>
+            <td data-en="2028 Accounting Theory" data-ta="2028 கணக்கியல் கோட்பாடு">2028 Accounting Theory</td>
+            <td>Monday 6.30pm<br> Wednesday 6.30pm<br> Saturday 6.30pm</td>
+            <td>24 months</td>
+           <td><span class="tag">EN / TA</span></td>
+            <td>Rs. 2,000 <span data-en="/mo" data-ta="/மா">/mo</span></td>
+          </tr>
+           <tr>
+            <td data-en="2028 Paper Discussion" data-ta="2028 வினாத்தாள் விவாதம்">2028 Paper Discussion</td>
+            <td></td>
+            <td></td>
+            <td><span class="tag">EN / TA</span></td>
+            <td> <span data-en="" data-ta=""></span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================= REGISTRATION ============================= -->
+<section class="section-pad" id="register" style="background:var(--bg-alt);">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="section-eyebrow" data-en="Student Registration" data-ta="மாணவர் பதிவு">Student Registration</div>
+      <h2 data-en="Reserve Your Seat" data-ta="உங்கள் இருக்கையை பதிவு செய்யுங்கள்">Reserve Your Seat</h2>
+      <p data-en="Fill in your details — we'll open WhatsApp with your registration ready to send." data-ta="உங்கள் விவரங்களை பூர்த்தி செய்யவும் — உங்கள் பதிவு தயாராக WhatsApp திறக்கப்படும்.">Fill in your details — we'll open WhatsApp with your registration ready to send.</p>
+    </div>
+    <div class="reg-wrap reveal">
+      <div class="reg-side">
+        <h3 data-en="How it works" data-ta="இது எப்படி செயல்படுகிறது">How it works</h3>
+        <p data-en="Your registration is sent directly to our WhatsApp — no waiting, no lost forms." data-ta="உங்கள் பதிவு நேரடியாக எங்கள் WhatsApp க்கு அனுப்பப்படும் — காத்திருப்பு இல்லை, படிவங்கள் தொலைவதில்லை.">Your registration is sent directly to our WhatsApp — no waiting, no lost forms.</p>
+        <ul class="reg-steps">
+          <li><i class="fa-solid fa-1"></i> <span data-en="Fill the form with your details" data-ta="உங்கள் விவரங்களுடன் படிவத்தை பூர்த்தி செய்யவும்">Fill the form with your details</span></li>
+          <li><i class="fa-solid fa-2"></i> <span data-en="Tap “Send via WhatsApp”" data-ta="“WhatsApp வழியாக அனுப்பு” என்பதை தட்டவும்">Tap “Send via WhatsApp”</span></li>
+          <li><i class="fa-solid fa-3"></i> <span data-en="Confirm and send the pre-filled message" data-ta="முன்கூட்டியே நிரப்பப்பட்ட செய்தியை உறுதிப்படுத்தி அனுப்பவும்">Confirm and send the pre-filled message</span></li>
+          <li><i class="fa-solid fa-4"></i> <span data-en="We'll confirm your seat within 24 hours" data-ta="24 மணி நேரத்திற்குள் உங்கள் இருக்கையை உறுதிப்படுத்துவோம்">We'll confirm your seat within 24 hours</span></li>
+        </ul>
+      </div>
+      <div class="reg-form">
+        <form id="reg-form" onsubmit="return submitRegistration(event)">
+          <div class="form-row">
+            <div class="field">
+              <label data-en="Student Name" data-ta="மாணவர் பெயர்">Student Name</label>
+              <input type="text" id="r-name" required placeholder="e.g. Nilani Kumar">
+            </div>
+            <div class="field">
+              <label data-en="Phone Number" data-ta="தொலைபேசி எண்">Phone Number</label>
+              <input type="tel" id="r-phone" required placeholder="07X XXX XXXX">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="field">
+              <label data-en="Email" data-ta="மின்னஞ்சல்">Email</label>
+              <input type="email" id="r-email" required placeholder="you@email.com">
+            </div>
+            <div class="field">
+              <label data-en="District" data-ta="மாவட்டம்">District</label>
+              <select id="r-district" required>
+                <option value="" data-en="Select district" data-ta="மாவட்டத்தை தேர்வு செய்யவும்">Select district</option>
+                <option>Jaffna</option><option>Kilinochchi</option><option>Mannar</option><option>Vavuniya</option>
+                <option>Mullaitivu</option><option>Trincomalee</option><option>Batticaloa</option><option>Ampara</option>
+                <option>Colombo</option><option>Gampaha</option><option>Kandy</option><option>Other</option>
+              </select>
+            </div>
+
+ <div class="field">
+              <label data-en="Batch" data-ta="தொகுதி">District</label>
+              <select id="r-district" required>
+                <option value="" data-en="Select Batch" data-ta="தொகுதியைத் தேர்ந்தெடுக்கவும்">Select Batch</option>
+                <option>2027</option><option>2028</option><option>AAT</option>
+              </select>
+            </div>
+          </div>
+          <div class="field">
+            <label data-en="Course Selection" data-ta="பாடநெறி தேர்வு">Course Selection</label>
+            <select id="r-course" required>
+              <option value="" data-en="Select a course" data-ta="ஒரு பாடநெறியை தேர்வு செய்யவும்">Select a course</option>
+              <option data-en="A/L Accounting Theory Classes" data-ta="உயர்தர கணக்கியல் கோட்பாட்டு வகுப்புகள்">A/L Accounting Theory Classes</option>
+              <option data-en="A/L Paper Discussion Classes" data-ta="உயர்தர வினாத்தாள் விவாத வகுப்புகள்">A/L Paper Discussion Classes</option>
+              <option data-en="Revision Classes" data-ta="திருப்புதல் வகுப்புகள்">Revision Classes</option>
+              <option data-en="Model Papers &amp; MCQ Practice" data-ta="மாதிரி வினாத்தாள் &amp; MCQ பயிற்சி">Model Papers &amp; MCQ Practice</option>
+            </select>
+          </div>
+          <button type="submit" class="btn btn-whatsapp btn-block"><i class="fa-brands fa-whatsapp"></i> <span data-en="Send via WhatsApp" data-ta="WhatsApp வழியாக அனுப்பு">Send via WhatsApp</span></button>
+          <p class="form-note"><i class="fa-solid fa-circle-info"></i> <span data-en="Your details open in WhatsApp, addressed to our admissions number. Nothing is stored on this page." data-ta="உங்கள் விவரங்கள் எங்கள் சேர்க்கை எண்ணுக்கு WhatsApp இல் திறக்கப்படும். இந்தப் பக்கத்தில் எதுவும் சேமிக்கப்படாது.">Your details open in WhatsApp, addressed to our admissions number. Nothing is stored on this page.</span></p>
+        </form>
+        <div class="form-success" id="reg-success">
+          <i class="fa-solid fa-circle-check"></i>
+          <h4 data-en="WhatsApp Opened!" data-ta="WhatsApp திறக்கப்பட்டது!">WhatsApp Opened!</h4>
+          <p data-en="Send the pre-filled message to complete your registration." data-ta="உங்கள் பதிவை முடிக்க முன்கூட்டியே நிரப்பப்பட்ட செய்தியை அனுப்பவும்.">Send the pre-filled message to complete your registration.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================= STUDENT DASHBOARD ============================= -->
+<section class="section-pad" id="dashboard">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="section-eyebrow" data-en="Student Dashboard" data-ta="மாணவர் டாஷ்போர்டு">Student Dashboard</div>
+      <h2 data-en="Your Learning, Organised" data-ta="உங்கள் கற்றல், ஒழுங்கமைக்கப்பட்டது">Your Learning, Organised</h2>
+      <p data-en="Video lessons, notes, past papers and progress tracking in one place." data-ta="வீடியோ பாடங்கள், குறிப்புகள், பழைய வினாத்தாள்கள் மற்றும் முன்னேற்ற கண்காணிப்பு ஒரே இடத்தில்.">Video lessons, notes, past papers and progress tracking in one place.</p>
+    </div>
+    <div class="dash-box reveal">
+      <div class="login-panel" id="login-panel">
+        <i class="fa-solid fa-lock lock-ic"></i>
+        <h3 data-en="Student Login" data-ta="மாணவர் உள்நுழைவு">Student Login</h3>
+        <p data-en="Log in to access your video lessons, notes and progress." data-ta="உங்கள் வீடியோ பாடங்கள், குறிப்புகள் மற்றும் முன்னேற்றத்தை அணுக உள்நுழையவும்.">Log in to access your video lessons, notes and progress.</p>
+        <form onsubmit="return doLogin(event)">
+          <div class="field">
+            <label data-en="Email or Student ID" data-ta="மின்னஞ்சல் அல்லது மாணவர் ஐடி">Email or Student ID</label>
+            <input type="text" id="d-user" placeholder="student@email.com" required>
+          </div>
+          <div class="field">
+            <label data-en="Password" data-ta="கடவுச்சொல்">Password</label>
+            <input type="password" id="d-pass" placeholder="••••••••" required>
+          </div>
+          <button class="btn btn-primary btn-block" type="submit"><i class="fa-solid fa-right-to-bracket"></i> <span data-en="Log In" data-ta="உள்நுழையவும்">Log In</span></button>
+        </form>
+        <div class="demo-hint"><i class="fa-solid fa-flask"></i> <span data-en="Demo mode — any email &amp; password logs you in to preview the dashboard." data-ta="டெமோ முறை — எந்த மின்னஞ்சல் &amp; கடவுச்சொல்லும் டாஷ்போர்டை முன்னோட்டமிட உள்நுழையும்.">Demo mode — any email &amp; password logs you in to preview the dashboard.</span></div>
+      </div>
+
+      <div class="dash-app" id="dash-app">
+        <div class="dash-side">
+          <div class="dash-user">
+            <div class="av">SN</div>
+            <div><strong data-en="Student" data-ta="மாணவர்">Student</strong><span data-en="Accounting • Grade 13" data-ta="கணக்கியல் • தரம் 13">Accounting • Grade 13</span></div>
+          </div>
+          <div class="dash-nav-item active" onclick="showPane('videos', this)"><i class="fa-solid fa-play"></i> <span data-en="Video Lessons" data-ta="வீடியோ பாடங்கள்">Video Lessons</span></div>
+          <div class="dash-nav-item" onclick="showPane('notes', this)"><i class="fa-solid fa-file-lines"></i> <span data-en="PDF Notes" data-ta="PDF குறிப்புகள்">PDF Notes</span></div>
+          <div class="dash-nav-item" onclick="showPane('papers', this)"><i class="fa-solid fa-file-pen"></i> <span data-en="Past Papers" data-ta="பழைய வினாத்தாள்கள்">Past Papers</span></div>
+          <div class="dash-nav-item" onclick="showPane('assign', this)"><i class="fa-solid fa-upload"></i> <span data-en="Assignments" data-ta="பணிகள்">Assignments</span></div>
+          <div class="dash-nav-item" onclick="showPane('progress', this)"><i class="fa-solid fa-chart-line"></i> <span data-en="Progress" data-ta="முன்னேற்றம்">Progress</span></div>
+          <div class="dash-nav-item logout" onclick="doLogout()"><i class="fa-solid fa-right-from-bracket"></i> <span data-en="Log Out" data-ta="வெளியேறு">Log Out</span></div>
+        </div>
+        <div class="dash-main">
+          <div class="dash-pane active" id="pane-videos">
+            <h4 data-en="Video Lessons" data-ta="வீடியோ பாடங்கள்">Video Lessons</h4>
+            <div class="resource-row"><div class="rl"><i class="fa-solid fa-circle-play"></i> <span data-en="Unit 01 — Introduction to Accounting" data-ta="பாடம் 01 — கணக்கியல் அறிமுகம்">Unit 01 — Introduction to Accounting</span></div><span class="rmeta">42:10</span></div>
+            <div class="resource-row"><div class="rl"><i class="fa-solid fa-circle-play"></i> <span data-en="Unit 02 — Double Entry System" data-ta="பாடம் 02 — இரட்டை பதிவு முறை">Unit 02 — Double Entry System</span></div><span class="rmeta">38:52</span></div>
+            <div class="resource-row"><div class="rl"><i class="fa-solid fa-circle-play"></i> <span data-en="Unit 03 — Final Accounts" data-ta="பாடம் 03 — இறுதிக் கணக்குகள்">Unit 03 — Final Accounts</span></div><span class="rmeta">55:04</span></div>
+            <div class="resource-row"><div class="rl"><i class="fa-solid fa-circle-play"></i> <span data-en="Unit 04 — Partnership Accounts" data-ta="பாடம் 04 — கூட்டாண்மை கணக்குகள்">Unit 04 — Partnership Accounts</span></div><span class="rmeta">47:19</span></div>
+          </div>
+          <div class="dash-pane" id="pane-notes">
+            <h4 data-en="PDF Notes" data-ta="PDF குறிப்புகள்">PDF Notes</h4>
+            <div class="resource-row"><div class="rl"><i class="fa-solid fa-file-pdf"></i> <span data-en="Full Syllabus Summary Notes" data-ta="முழு பாடத்திட்ட சுருக்க குறிப்புகள்">Full Syllabus Summary Notes</span></div><span class="rmeta">2.4 MB</span></div>
+            <div class="resource-row"><div class="rl"><i class="fa-solid fa-file-pdf"></i> <span data-en="Ratio Analysis Formula Sheet" data-ta="விகித பகுப்பாய்வு சூத்திர தாள்">Ratio Analysis Formula Sheet</span></div><span class="rmeta">640 KB</span></div>
+            <div class="resource-row"><div class="rl"><i class="fa-solid fa-file-pdf"></i> <span data-en="Business Studies Key Terms" data-ta="வணிகக் கல்வி முக்கிய சொற்கள்">Business Studies Key Terms</span></div><span class="rmeta">1.1 MB</span></div>
+          </div>
+          <div class="dash-pane" id="pane-papers">
+            <h4 data-en="Past Papers" data-ta="பழைய வினாத்தாள்கள்">Past Papers</h4>
+            <div class="resource-row"><div class="rl"><i class="fa-solid fa-file-lines"></i> <span>A/L Accounting 2024 — Paper I &amp; II</span></div><span class="rmeta">PDF</span></div>
+            <div class="resource-row"><div class="rl"><i class="fa-solid fa-file-lines"></i> <span>A/L Accounting 2023 — Paper I &amp; II</span></div><span class="rmeta">PDF</span></div>
+            <div class="resource-row"><div class="rl"><i class="fa-solid fa-file-lines"></i> <span>A/L Business Studies 2024</span></div><span class="rmeta">PDF</span></div>
+          </div>
+          <div class="dash-pane" id="pane-assign">
+            <h4 data-en="Assignment Upload" data-ta="பணி பதிவேற்றம்">Assignment Upload</h4>
+            <label class="upload-zone" for="assign-file">
+              <i class="fa-solid fa-cloud-arrow-up" style="font-size:22px;"></i>
+              <p style="margin-top:8px;" data-en="Click to choose a file to upload" data-ta="பதிவேற்ற ஒரு கோப்பை தேர்ந்தெடுக்க கிளிக் செய்யவும்">Click to choose a file to upload</p>
+            </label>
+            <input type="file" id="assign-file" style="display:none;" onchange="handleUpload(event)">
+            <ul class="upload-list" id="upload-list"></ul>
+          </div>
+          <div class="dash-pane" id="pane-progress">
+            <h4 data-en="Your Progress" data-ta="உங்கள் முன்னேற்றம்">Your Progress</h4>
+            <div class="progress-block">
+              <div class="pl"><span data-en="Accounting Theory" data-ta="கணக்கியல் கோட்பாடு">Accounting Theory</span><span>82%</span></div>
+              <div class="progress-bar"><i style="width:82%;"></i></div>
+            </div>
+            <div class="progress-block">
+              <div class="pl"><span data-en="Business Studies" data-ta="வணிகக் கல்வி">Business Studies</span><span>67%</span></div>
+              <div class="progress-bar"><i style="width:67%;"></i></div>
+            </div>
+            <div class="progress-block">
+              <div class="pl"><span data-en="MCQ Practice" data-ta="MCQ பயிற்சி">MCQ Practice</span><span>91%</span></div>
+              <div class="progress-bar"><i style="width:91%;"></i></div>
+            </div>
+            <div class="progress-block">
+              <div class="pl"><span data-en="Model Papers Completed" data-ta="முடிக்கப்பட்ட மாதிரி வினாத்தாள்கள்">Model Papers Completed</span><span>9/12</span></div>
+              <div class="progress-bar"><i style="width:75%;"></i></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================= AI ACCOUNTING TUTOR ============================= -->
+<section class="section-pad" id="ai-tutor" style="background:var(--bg-alt);">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="section-eyebrow" data-en="AI Accounting Tutor" data-ta="AI கணக்கியல் ஆசிரியர்">AI Accounting Tutor</div>
+      <h2 data-en="Ask. Understand. Practice." data-ta="கேளுங்கள். புரிந்துகொள்ளுங்கள். பயிற்சி செய்யுங்கள்.">Ask. Understand. Practice.</h2>
+      <p data-en="A step-by-step accounting helper, available in Tamil and English." data-ta="தமிழ் மற்றும் ஆங்கிலத்தில் கிடைக்கும் படிப்படியான கணக்கியல் உதவியாளர்.">A step-by-step accounting helper, available in Tamil and English.</p>
+    </div>
+    <div class="tutor-wrap">
+      <div class="tutor-info reveal">
+        <h3 data-en="Try asking about:" data-ta="இதைப் பற்றி கேளுங்கள்:">Try asking about:</h3>
+        <p data-en="Type a question below, or tap a topic to see a worked, step-by-step explanation." data-ta="கீழே ஒரு கேள்வியை தட்டச்சு செய்யவும், அல்லது படிப்படியான விளக்கத்தை காண ஒரு தலைப்பை தட்டவும்.">Type a question below, or tap a topic to see a worked, step-by-step explanation.</p>
+        <div class="tutor-chip-list">
+          <div class="tutor-chip" onclick="askTutor('What is the double entry rule for debit and credit?')"><i class="fa-solid fa-circle-question"></i> <span data-en="Debit &amp; Credit rules" data-ta="பற்று &amp; வரவு விதிகள்">Debit &amp; Credit rules</span></div>
+          <div class="tutor-chip" onclick="askTutor('How do I prepare a trial balance?')"><i class="fa-solid fa-circle-question"></i> <span data-en="Preparing a trial balance" data-ta="இருப்புச்சரிபார்வை தயாரித்தல்">Preparing a trial balance</span></div>
+          <div class="tutor-chip" onclick="askTutor('How is depreciation calculated?')"><i class="fa-solid fa-circle-question"></i> <span data-en="Calculating depreciation" data-ta="தேய்மானம் கணக்கிடுதல்">Calculating depreciation</span></div>
+          <div class="tutor-chip" onclick="askTutor('What is a journal entry?')"><i class="fa-solid fa-circle-question"></i> <span data-en="Journal entries" data-ta="ஏடு பதிவுகள்">Journal entries</span></div>
+          <div class="tutor-chip" onclick="askTutor('How do I calculate profit and loss?')"><i class="fa-solid fa-circle-question"></i> <span data-en="Profit &amp; Loss account" data-ta="இலாப நஷ்டக் கணக்கு">Profit &amp; Loss account</span></div>
+        </div>
+      </div>
+      <div class="chat-box reveal">
+        <div class="chat-head">
+          <div class="dot"></div>
+          <div>
+            <strong data-en="Accounting Tutor" data-ta="கணக்கியல் ஆசிரியர்">Accounting Tutor</strong>
+            <span data-en="Online • Replies instantly" data-ta="ஆன்லைனில் • உடனடியாக பதிலளிக்கும்">Online • Replies instantly</span>
+          </div>
+        </div>
+        <div class="chat-body" id="chat-body">
+          <div class="msg bot" data-en="Vanakkam! I'm your AI Accounting Tutor. Ask me about journal entries, ledgers, trial balance, depreciation, final accounts or ratios — in English or Tamil." data-ta="வணக்கம்! நான் உங்கள் AI கணக்கியல் ஆசிரியர். ஏடு பதிவுகள், லெட்ஜர், இருப்புச்சரிபார்வை, தேய்மானம், இறுதிக் கணக்குகள் அல்லது விகிதங்கள் பற்றி — ஆங்கிலம் அல்லது தமிழில் என்னிடம் கேளுங்கள்.">Vanakkam! I'm your AI Accounting Tutor. Ask me about journal entries, ledgers, trial balance, depreciation, final accounts or ratios — in English or Tamil.</div>
+        </div>
+        <div class="chat-input-row">
+          <input type="text" id="chat-input" placeholder="Type your accounting question…" onkeydown="if(event.key==='Enter'){sendChat();}">
+          <button onclick="sendChat()" aria-label="Send"><i class="fa-solid fa-paper-plane"></i></button>
+        </div>
+      </div>
+    </div>
+    <div class="dev-note reveal">
+      <h5><i class="fa-solid fa-code"></i> <span data-en="Developer note" data-ta="டெவலப்பர் குறிப்பு">Developer note</span></h5>
+      <ul>
+        <li><i class="fa-solid fa-circle-check"></i> <span data-en="This demo tutor uses a local rule-based responder. Connect it to Claude (Anthropic API) for full, open-ended step-by-step tutoring." data-ta="இந்த டெமோ ஆசிரியர் ஒரு உள்ளூர் விதி அடிப்படையிலான பதிலளிப்பாளரைப் பயன்படுத்துகிறது. முழுமையான, திறந்த-முடிவு படிப்படியான வழிகாட்டலுக்கு Claude (Anthropic API) உடன் இணைக்கவும்.">This demo tutor uses a local rule-based responder. Connect it to Claude (Anthropic API) for full, open-ended step-by-step tutoring.</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============================= RESOURCES ============================= -->
+<section class="section-pad" id="resources">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="section-eyebrow" data-en="Resources" data-ta="வளங்கள்">Resources</div>
+      <h2 data-en="Free Downloads" data-ta="இலவச பதிவிறக்கங்கள்">Free Downloads</h2>
+      <p data-en="Notes, past papers, model answers and exam tips — open to everyone." data-ta="குறிப்புகள், பழைய வினாத்தாள்கள், மாதிரி விடைகள் மற்றும் தேர்வு உதவிக்குறிப்புகள் — அனைவருக்கும் திறந்தவை.">Notes, past papers, model answers and exam tips — open to everyone.</p>
+    </div>
+    <div class="resource-grid">
+      <div class="resource-card reveal">
+        <i class="fa-solid fa-file-lines"></i>
+        <h5 data-en="Summary Notes" data-ta="சுருக்க குறிப்புகள்">Summary Notes</h5>
+        <p data-en="Unit-wise Accounting notes" data-ta="பாட வாரியான கணக்கியல் குறிப்புகள்">Unit-wise Accounting notes</p>
+        <a class="btn btn-outline btn-sm" href="#contact"><i class="fa-solid fa-download"></i> <span data-en="Get Access" data-ta="அணுகல் பெறவும்">Get Access</span></a>
+      </div>
+      <div class="resource-card reveal">
+        <i class="fa-solid fa-file-pen"></i>
+        <h5 data-en="Past Papers" data-ta="பழைய வினாத்தாள்கள்">Past Papers</h5>
+        <p data-en="2018–2024 A/L papers" data-ta="2018–2024 உயர்தர வினாத்தாள்கள்">2018–2024 A/L papers</p>
+        <a class="btn btn-outline btn-sm" href="#contact"><i class="fa-solid fa-download"></i> <span data-en="Get Access" data-ta="அணுகல் பெறவும்">Get Access</span></a>
+      </div>
+      <div class="resource-card reveal">
+        <i class="fa-solid fa-square-check"></i>
+        <h5 data-en="Model Answers" data-ta="மாதிரி விடைகள்">Model Answers</h5>
+        <p data-en="Marking-scheme style answers" data-ta="மதிப்பீட்டு திட்ட பாணி விடைகள்">Marking-scheme style answers</p>
+        <a class="btn btn-outline btn-sm" href="#contact"><i class="fa-solid fa-download"></i> <span data-en="Get Access" data-ta="அணுகல் பெறவும்">Get Access</span></a>
+      </div>
+      <div class="resource-card reveal">
+        <i class="fa-solid fa-lightbulb"></i>
+        <h5 data-en="Exam Tips" data-ta="தேர்வு உதவிக்குறிப்புகள்">Exam Tips</h5>
+        <p data-en="Time &amp; answer strategies" data-ta="நேரம் &amp; விடையளிக்கும் உத்திகள்">Time &amp; answer strategies</p>
+        <a class="btn btn-outline btn-sm" href="#contact"><i class="fa-solid fa-download"></i> <span data-en="Get Access" data-ta="அணுகல் பெறவும்">Get Access</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================= REVIEWS ============================= -->
+<section class="section-pad" id="reviews" style="background:var(--bg-alt);">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="section-eyebrow" data-en="Student Reviews" data-ta="மாணவர் மதிப்புரைகள்">Student Reviews</div>
+      <h2 data-en="Real Results, Real Students" data-ta="உண்மையான முடிவுகள், உண்மையான மாணவர்கள்">Real Results, Real Students</h2>
+    </div>
+    <div class="review-grid">
+      <div class="review-card reveal">
+        <div class="review-stars">★★★★★</div>
+        <p class="quote" data-en="Pradeepan sir explains every topic so clearly. I went from struggling with journal entries to scoring an A in Accounting." data-ta="Pradeepan சார் ஒவ்வொரு தலைப்பையும் மிகத் தெளிவாக விளக்குகிறார். ஏடு பதிவுகளில் சிரமப்பட்ட நான் கணக்கியலில் A தரம் பெற்றேன்.">Pradeepan sir explains every topic so clearly. I went from struggling with journal entries to scoring an A in Accounting.</p>
+        <div class="review-who"><div class="av">TK</div><div><strong>Tharsan K.</strong><span data-en="A/L 2024, Jaffna" data-ta="உயர்தர 2024, யாழ்ப்பாணம்">A/L 2024, Jaffna</span></div></div>
+      </div>
+      <div class="review-card reveal">
+        <div class="review-stars">★★★★★</div>
+        <p class="quote" data-en="The paper discussion classes taught me exactly how to answer for full marks. Best investment for my A/Ls." data-ta="வினாத்தாள் விவாத வகுப்புகள் முழு மதிப்பெண்களுக்கு எவ்வாறு பதிலளிப்பது என்பதை சரியாக கற்பித்தன. என் உயர்தரத்திற்கான சிறந்த முதலீடு.">The paper discussion classes taught me exactly how to answer for full marks. Best investment for my A/Ls.</p>
+        <div class="review-who"><div class="av">AS</div><div><strong>Anjali S.</strong><span data-en="A/L 2023, Vavuniya" data-ta="உயர்தர 2023, வவுனியா">A/L 2023, Vavuniya</span></div></div>
+      </div>
+      <div class="review-card reveal">
+        <div class="review-stars">★★★★★</div>
+        <p class="quote" data-en="Classes in Tamil made everything click for me. The AI tutor helped me practice at midnight before my exam!" data-ta="தமிழில் வகுப்புகள் எனக்கு எல்லாவற்றையும் தெளிவாக்கின. தேர்வுக்கு முன் நள்ளிரவில் AI ஆசிரியர் எனக்கு பயிற்சிக்கு உதவியது!">Classes in Tamil made everything click for me. The AI tutor helped me practice at midnight before my exam!</p>
+        <div class="review-who"><div class="av">RP</div><div><strong>Ravindu P.</strong><span data-en="A/L 2024, Trincomalee" data-ta="உயர்தர 2024, திருகோணமலை">A/L 2024, Trincomalee</span></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================= CONTACT ============================= -->
+<section class="section-pad" id="contact">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="section-eyebrow" data-en="Contact" data-ta="தொடர்பு">Contact</div>
+      <h2 data-en="Let's Get You Started" data-ta="உங்களை தொடங்கி வைப்போம்">Let's Get You Started</h2>
+      <p data-en="Reach out anytime — we usually reply within a few hours." data-ta="எப்போது வேண்டுமானாலும் தொடர்பு கொள்ளுங்கள் — சில மணி நேரங்களில் பதிலளிப்போம்.">Reach out anytime — we usually reply within a few hours.</p>
+    </div>
+    <div class="contact-grid">
+      <a class="contact-card reveal" href="https://wa.me/94741605284" target="_blank" rel="noopener">
+        <i class="fa-brands fa-whatsapp"></i>
+        <h5 data-en="WhatsApp" data-ta="WhatsApp">WhatsApp</h5>
+        <p>+94 74 160 5284</p>
+      </a>
+      <a class="contact-card reveal" href="tel:+94741605284">
+        <i class="fa-solid fa-phone"></i>
+        <h5 data-en="Phone" data-ta="தொலைபேசி">Phone</h5>
+        <p>+94 74 160 5284</p>
+      </a>
+      <a class="contact-card reveal" href="mailto:centereducation091@gmail.com">
+        <i class="fa-solid fa-envelope"></i>
+        <h5 data-en="Email" data-ta="மின்னஞ்சல்">Email</h5>
+        <p>centereducation091@gmail.com</p>
+      </a>
+    </div>
+    <div class="social-row reveal">
+      <a href="#" onclick="return false;" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+      <a href="#" onclick="return false;" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+      <a href="#" onclick="return false;" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+      <a href="#" onclick="return false;" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================= COURSE DETAIL PANEL ============================= -->
+<div class="course-detail-overlay" id="course-detail-overlay" onclick="closeCourseDetail()"></div>
+<aside class="course-detail-panel" id="course-detail-panel" role="dialog" aria-modal="true" aria-labelledby="course-detail-title">
+  <button class="course-detail-close" onclick="closeCourseDetail()" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+  <div class="course-detail-icon" id="course-detail-icon"><i class="fa-solid fa-book-open"></i></div>
+  <h3 id="course-detail-title"></h3>
+  <p class="course-detail-desc" id="course-detail-desc"></p>
+  <div class="course-detail-meta">
+    <div><span data-en="Schedule" data-ta="கால அட்டவணை">Schedule</span><strong id="course-detail-schedule"></strong></div>
+    <div><span data-en="Duration" data-ta="கால அளவு">Duration</span><strong id="course-detail-duration"></strong></div>
+    <div><span data-en="Medium" data-ta="மொழி மூலம்">Medium</span><strong id="course-detail-medium"></strong></div>
+    <div><span data-en="Fee" data-ta="கட்டணம்">Fee</span><strong id="course-detail-fee"></strong></div>
+  </div>
+  <div class="course-detail-list">
+    <h5 data-en="What You'll Cover" data-ta="நீங்கள் கற்கும் விஷயங்கள்">What You'll Cover</h5>
+    <ul id="course-detail-topics"></ul>
+  </div>
+  <a href="#register" class="btn btn-primary btn-block" onclick="closeCourseDetail()" data-en="Register For This Course" data-ta="இந்த பாடநெறிக்கு பதிவு செய்க">Register For This Course</a>
+</aside>
+
+<!-- ============================= FOOTER ============================= -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="brand" style="margin-bottom:14px;">
+          <div class="brand-mark" style="background:rgba(255,255,255,.1);">EA</div>
+          <div class="brand-text"><strong style="color:#fff;">Easy Accounting</strong><span style="color:rgba(255,255,255,.5);">With Pradeepan</span></div>
+        </div>
+        <p data-en="Online A/L Accounting &amp; Business Studies classes for Sri Lankan students, in Tamil and English medium." data-ta="இலங்கை மாணவர்களுக்கான ஆன்லைன் உயர்தர கணக்கியல் &amp; வணிகக் கல்வி வகுப்புகள், தமிழ் மற்றும் ஆங்கில மொழி மூலம்.">Online A/L Accounting &amp; Business Studies classes for Sri Lankan students, in Tamil and English medium.</p>
+      </div>
+      <div>
+        <h5 data-en="Quick Links" data-ta="விரைவு இணைப்புகள்">Quick Links</h5>
+        <ul>
+          <li><a href="#about" data-en="About Us" data-ta="எங்களை பற்றி">About Us</a></li>
+          <li><a href="#courses" data-en="Courses" data-ta="பாடநெறிகள்">Courses</a></li>
+          <li><a href="#schedule" data-en="Schedule" data-ta="கால அட்டவணை">Schedule</a></li>
+          <li><a href="#dashboard" data-en="Dashboard" data-ta="டாஷ்போர்டு">Dashboard</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5 data-en="More" data-ta="மேலும்">More</h5>
+        <ul>
+          <li><a href="#ai-tutor" data-en="AI Tutor" data-ta="AI ஆசிரியர்">AI Tutor</a></li>
+          <li><a href="#resources" data-en="Resources" data-ta="வளங்கள்">Resources</a></li>
+          <li><a href="#reviews" data-en="Reviews" data-ta="மதிப்புரைகள்">Reviews</a></li>
+          <li><a href="#register" data-en="Register" data-ta="பதிவு">Register</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5 data-en="Contact" data-ta="தொடர்பு">Contact</h5>
+        <ul>
+          <li><a href="https://wa.me/94741605284">+94 74 160 5284</a></li>
+          <li><a href="mailto:centereducation091@gmail.com">centereducation091@gmail.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; <span id="year"></span> Easy Accounting With Pradeepan. <span data-en="All rights reserved." data-ta="அனைத்து உரிமைகளும் பாதுகாக்கப்பட்டவை.">All rights reserved.</span></span>
+      <span data-en="Built for A/L students of Sri Lanka 🇱🇰" data-ta="இலங்கை உயர்தர மாணவர்களுக்காக உருவாக்கப்பட்டது 🇱🇰">Built for A/L students of Sri Lanka 🇱🇰</span>
+    </div>
+  </div>
+</footer>
+
+<a class="float-wa" href="https://wa.me/94741605284?text=Hello%2C%20I%20have%20a%20question%20about%20Easy%20Accounting%20With%20Pradeepan." target="_blank" rel="noopener" aria-label="WhatsApp us">
+  <i class="fa-brands fa-whatsapp"></i>
+</a>
+
+<script>
+/* ============================= THEME ============================= */
+function toggleTheme(){
+  const html = document.documentElement;
+  const next = html.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+  html.setAttribute('data-theme', next);
+  const icon = document.querySelector('#theme-toggle i');
+  icon.className = next === 'dark' ? 'fa-solid fa-sun' : 'fa-solid fa-moon';
+}
+/* honor system preference on load, without persistence (in-memory only) */
+(function(){
+  if(window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches){
+    document.documentElement.setAttribute('data-theme','dark');
+    document.addEventListener('DOMContentLoaded', ()=>{
+      const icon = document.querySelector('#theme-toggle i');
+      if(icon) icon.className = 'fa-solid fa-sun';
+    });
+  }
+})();
+
+/* ============================= LANGUAGE ============================= */
+function setLang(lang){
+  document.documentElement.setAttribute('data-lang', lang);
+  document.documentElement.setAttribute('lang', lang === 'ta' ? 'ta' : 'en');
+  document.getElementById('lang-en').classList.toggle('active', lang==='en');
+  document.getElementById('lang-ta').classList.toggle('active', lang==='ta');
+  document.querySelectorAll('[data-en]').forEach(el=>{
+    const val = lang === 'ta' ? el.getAttribute('data-ta') : el.getAttribute('data-en');
+    if(val !== null && el.children.length === 0 || el.tagName==='OPTION') { el.textContent = val; }
+  });
+  document.querySelectorAll('span[data-en], strong[data-en], h1[data-en], h4[data-en], h5[data-en], p[data-en], div.section-eyebrow[data-en]').forEach(el=>{
+    if(el.children.length===0){
+      const val = lang === 'ta' ? el.getAttribute('data-ta') : el.getAttribute('data-en');
+      if(val) el.textContent = val;
+    }
+  });
+}
+
+/* ============================= MOBILE NAV ============================= */
+function toggleMobileNav(){
+  document.getElementById('mobile-nav').classList.toggle('open');
+}
+function navTap(e, id){
+  e.preventDefault();
+  document.getElementById('mobile-nav').classList.remove('open');
+  // wait for the menu-close reflow to finish before measuring/scrolling
+  requestAnimationFrame(()=>{
+    requestAnimationFrame(()=>{
+      const target = document.getElementById(id);
+      if(target) target.scrollIntoView({behavior:'smooth', block:'start'});
+    });
+  });
+  return false;
+}
+
+/* ============================= SCROLL REVEAL ============================= */
+const revealObserver = new IntersectionObserver((entries)=>{
+  entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in'); revealObserver.unobserve(e.target); } });
+},{threshold:0.12});
+document.querySelectorAll('.reveal').forEach(el=>revealObserver.observe(el));
+
+/* ============================= COURSE DETAIL PANEL ============================= */
+const courseDetails = {
+  theory:{
+    icon:'fa-book-open',
+    en:{title:"A/L Accounting Theory Classes", desc:"Complete syllabus coverage, concept by concept, with worked examples and step-by-step explanations for every topic in the A/L Accounting syllabus.",
+      topics:["Double entry & the accounting equation","Final accounts for sole traders & partnerships","Company accounts & published statements","Manufacturing accounts","Incomplete records & single entry","Non-profit organisation accounts"]},
+    ta:{title:"உயர்தர கணக்கியல் கோட்பாட்டு வகுப்புகள்", desc:"உயர்தர கணக்கியல் பாடத்திட்டத்தின் ஒவ்வொரு தலைப்பையும், தீர்க்கப்பட்ட உதாரணங்களுடன் படிப்படியாக முழுமையாக விளக்கும் வகுப்புகள்.",
+      topics:["இரட்டைப் பதிவு & கணக்கியல் சமன்பாடு","தனியார் & கூட்டாண்மை இறுதிக் கணக்குகள்","நிறுவனக் கணக்குகள் & வெளியிடப்பட்ட அறிக்கைகள்","உற்பத்திக் கணக்குகள்","முழுமையற்ற பதிவுகள் & ஒற்றைப் பதிவு","இலாப நோக்கமற்ற நிறுவனக் கணக்குகள்"]},
+    schedule:"Tue & Thu, 4.30–6.00 PM", duration:"10 months", medium:"EN / TA", fee:"Rs. 1,500 /mo"
+  },
+  discussion:{
+    icon:'fa-comments',
+    en:{title:"A/L Paper Discussion Classes", desc:"Past paper walkthroughs with marking-scheme level answer techniques, so you know exactly how examiners award marks.",
+      topics:["Past paper Q&A walkthroughs","Marking-scheme answer structuring","Common mistakes & how to avoid them","Time-management strategies for the exam"]},
+    ta:{title:"உயர்தர வினாத்தாள் விவாத வகுப்புகள்", desc:"பரீட்சகர்கள் மதிப்பெண் வழங்கும் முறையை துல்லியமாக புரிந்துகொள்ள, மதிப்பீட்டு திட்ட அளவிலான நுட்பங்களுடன் பழைய வினாத்தாள் விளக்கம்.",
+      topics:["பழைய வினாத்தாள் கேள்வி-பதில் விளக்கம்","மதிப்பீட்டு திட்ட பதில் அமைப்பு","பொதுவான தவறுகள் & தவிர்க்கும் வழிகள்","தேர்வுக்கான நேர மேலாண்மை உத்திகள்"]},
+    schedule:"Sat, 3.00–5.00 PM", duration:"6 months", medium:"EN / TA", fee:"Rs. 1,200 /mo"
+  },
+  revision:{
+    icon:'fa-rotate',
+    en:{title:"Revision Classes", desc:"Fast-paced full-syllabus revision closer to the exam date, condensing every topic into exam-ready summaries.",
+      topics:["Full syllabus recap in condensed form","Formula & key-concept summary sheets","Rapid-fire practice questions","Last-minute exam techniques"]},
+    ta:{title:"திருப்புதல் வகுப்புகள்", desc:"தேர்வு தேதிக்கு நெருக்கமான வேகமான முழு பாடத்திட்ட திருப்புதல், ஒவ்வொரு தலைப்பையும் தேர்வுக்குத் தயாரான சுருக்கமாக வழங்குகிறது.",
+      topics:["சுருக்கமான வடிவில் முழு பாடத்திட்ட மறுபார்வை","சூத்திரங்கள் & முக்கிய கருத்துச் சுருக்க தாள்கள்","விரைவான பயிற்சி கேள்விகள்","கடைசி நேர தேர்வு நுட்பங்கள்"]},
+    schedule:"Mon–Fri, 7.00–8.30 PM", duration:"2 months", medium:"EN / TA", fee:"Rs. 2,000 /mo"
+  },
+  model:{
+    icon:'fa-list-check',
+    en:{title:"Model Papers & MCQ Practice", desc:"Timed model papers and structured MCQ sets with instant feedback, so you build real exam-day speed and accuracy.",
+      topics:["Timed full model papers","Structured MCQ practice sets","Instant answer feedback & review","Performance tracking over time"]},
+    ta:{title:"மாதிரி வினாத்தாள் & MCQ பயிற்சி", desc:"உண்மையான தேர்வு நாள் வேகத்தையும் துல்லியத்தையும் வளர்க்க, உடனடி கருத்துடன் கால வரையறுக்கப்பட்ட மாதிரி வினாத்தாள்கள் & MCQ தொகுப்புகள்.",
+      topics:["கால வரையறுக்கப்பட்ட முழு மாதிரி வினாத்தாள்கள்","கட்டமைக்கப்பட்ட MCQ பயிற்சி தொகுப்புகள்","உடனடி விடை கருத்து & மறுபார்வை","காலப்போக்கில் செயல்திறன் கண்காணிப்பு"]},
+    schedule:"Sun, 9.00–11.00 AM", duration:"3 months", medium:"EN / TA", fee:"Rs. 1,000 /mo"
+  }
+};
+function openCourseDetail(key){
+  const c = courseDetails[key];
+  if(!c) return;
+  const lang = currentLang();
+  const t = lang === 'ta' ? c.ta : c.en;
+  document.getElementById('course-detail-icon').innerHTML = `<i class="fa-solid ${c.icon}"></i>`;
+  document.getElementById('course-detail-title').textContent = t.title;
+  document.getElementById('course-detail-desc').textContent = t.desc;
+  document.getElementById('course-detail-schedule').textContent = c.schedule;
+  document.getElementById('course-detail-duration').textContent = c.duration;
+  document.getElementById('course-detail-medium').textContent = c.medium;
+  document.getElementById('course-detail-fee').textContent = c.fee;
+  const list = document.getElementById('course-detail-topics');
+  list.innerHTML = '';
+  t.topics.forEach(topic=>{
+    const li = document.createElement('li');
+    li.innerHTML = `<i class="fa-solid fa-check"></i><span>${topic}</span>`;
+    list.appendChild(li);
+  });
+  document.getElementById('course-detail-panel').classList.add('open');
+  document.getElementById('course-detail-overlay').classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+function closeCourseDetail(){
+  document.getElementById('course-detail-panel').classList.remove('open');
+  document.getElementById('course-detail-overlay').classList.remove('open');
+  document.body.style.overflow = '';
+}
+document.addEventListener('keydown', (e)=>{
+  if(e.key === 'Escape') closeCourseDetail();
+});
+
+/* ============================= REGISTRATION -> WHATSAPP ============================= */
+function submitRegistration(e){
+  e.preventDefault();
+  const name = document.getElementById('r-name').value.trim();
+  const phone = document.getElementById('r-phone').value.trim();
+  const email = document.getElementById('r-email').value.trim();
+  const district = document.getElementById('r-district').value;
+  const course = document.getElementById('r-course').value;
+
+  const text = `New Registration - Easy Accounting With Pradeepan%0A%0A`+
+    `Name: ${encodeURIComponent(name)}%0A`+
+    `Phone: ${encodeURIComponent(phone)}%0A`+
+    `Email: ${encodeURIComponent(email)}%0A`+
+    `District: ${encodeURIComponent(district)}%0A`+
+    `Course: ${encodeURIComponent(course)}`;
+
+  window.open(`https://wa.me/94741605284?text=${text}`, '_blank');
+  document.getElementById('reg-form').style.display = 'none';
+  document.getElementById('reg-success').classList.add('show');
+  return false;
+}
+
+/* ============================= DASHBOARD (in-memory demo) ============================= */
+function doLogin(e){
+  e.preventDefault();
+  document.getElementById('login-panel').style.display = 'none';
+  document.getElementById('dash-app').classList.add('show');
+  return false;
+}
+function doLogout(){
+  document.getElementById('dash-app').classList.remove('show');
+  document.getElementById('login-panel').style.display = 'block';
+}
+function showPane(name, el){
+  document.querySelectorAll('.dash-pane').forEach(p=>p.classList.remove('active'));
+  document.getElementById('pane-'+name).classList.add('active');
+  document.querySelectorAll('.dash-nav-item').forEach(n=>n.classList.remove('active'));
+  el.classList.add('active');
+}
+let uploadedFiles = [];
+function handleUpload(e){
+  const file = e.target.files[0];
+  if(!file) return;
+  uploadedFiles.push(file.name);
+  const list = document.getElementById('upload-list');
+  const li = document.createElement('li');
+  li.innerHTML = `<span><i class="fa-solid fa-paperclip"></i> ${file.name}</span><span style="color:var(--green);">Uploaded ✓</span>`;
+  list.appendChild(li);
+}
+
+/* ============================= AI ACCOUNTING TUTOR (demo rule-based) ============================= */
+const tutorKB = [
+  { keys:['debit','credit','double entry'],
+    en:"Step-by-step: 1) Every transaction affects at least two accounts. 2) Assets, Expenses & Drawings increase with a Debit. 3) Liabilities, Capital, Income & Revenue increase with a Credit. 4) Total debits must always equal total credits.",
+    ta:"படிப்படியாக: 1) ஒவ்வொரு பரிவர்த்தனையும் குறைந்தது இரண்டு கணக்குகளை பாதிக்கும். 2) சொத்துக்கள், செலவுகள் & பணம் எடுப்பு பற்று மூலம் அதிகரிக்கும். 3) பொறுப்புகள், மூலதனம், வருமானம் வரவு மூலம் அதிகரிக்கும். 4) மொத்த பற்று எப்போதும் மொத்த வரவுக்கு சமமாக இருக்க வேண்டும்." },
+  { keys:['trial balance'],
+    en:"Step-by-step: 1) List every ledger account with its final balance. 2) Place debit balances in the Debit column, credit balances in the Credit column. 3) Total both columns. 4) If they match, your ledger is arithmetically correct — if not, recheck postings.",
+    ta:"படிப்படியாக: 1) ஒவ்வொரு லெட்ஜர் கணக்கையும் அதன் இறுதி இருப்புடன் பட்டியலிடவும். 2) பற்று இருப்புகளை பற்று நிரலிலும், வரவு இருப்புகளை வரவு நிரலிலும் வைக்கவும். 3) இரண்டு நிரல்களையும் கூட்டவும். 4) அவை பொருந்தினால் லெட்ஜர் சரியானது — இல்லையெனில் பதிவுகளை மீண்டும் சரிபார்க்கவும்." },
+  { keys:['depreciation'],
+    en:"Step-by-step (Straight Line Method): 1) Depreciation = (Cost − Residual Value) ÷ Useful Life. 2) This gives an equal expense each year. 3) Record it as: Debit Depreciation Expense, Credit Accumulated Depreciation (or the asset account).",
+    ta:"படிப்படியாக (நேர்கோடு முறை): 1) தேய்மானம் = (விலை − மீதி மதிப்பு) ÷ பயன்பாட்டு காலம். 2) இது ஒவ்வொரு ஆண்டும் சம செலவை தரும். 3) பதிவு: பற்று தேய்மான செலவு, வரவு திரட்டு தேய்மானம் (அல்லது சொத்து கணக்கு)." },
+  { keys:['journal'],
+    en:"Step-by-step: 1) Identify the two (or more) accounts affected. 2) Decide which is debited and which is credited using the debit/credit rules. 3) Write the date, account names, amounts and a short narration. 4) Post each entry to the relevant ledger account.",
+    ta:"படிப்படியாக: 1) பாதிக்கப்படும் இரண்டு (அல்லது அதற்கு மேற்பட்ட) கணக்குகளை அடையாளம் காணவும். 2) பற்று/வரவு விதிகளைப் பயன்படுத்தி எது பற்று, எது வரவு என தீர்மானிக்கவும். 3) தேதி, கணக்கு பெயர்கள், தொகைகள் மற்றும் சுருக்க விளக்கத்தை எழுதவும். 4) ஒவ்வொரு பதிவையும் தொடர்புடைய லெட்ஜர் கணக்கில் பதியவும்." },
+  { keys:['profit','loss','final account'],
+    en:"Step-by-step: 1) Start with Gross Profit from the Trading Account. 2) Add other income (e.g. commission received). 3) Subtract all operating expenses (salaries, rent, depreciation, etc). 4) The result is Net Profit (or Net Loss), transferred to Capital.",
+    ta:"படிப்படியாக: 1) வர்த்தக கணக்கிலிருந்து மொத்த இலாபத்துடன் தொடங்கவும். 2) மற்ற வருமானங்களை (எ.கா. கமிஷன்) சேர்க்கவும். 3) அனைத்து செயல்பாட்டு செலவுகளையும் (சம்பளம், வாடகை, தேய்மானம்) கழிக்கவும். 4) முடிவு நிகர இலாபம் (அல்லது நஷ்டம்), இது மூலதனத்திற்கு மாற்றப்படும்." },
+  { keys:['ratio'],
+    en:"Step-by-step: 1) Choose the right ratio for the question (e.g. Current Ratio = Current Assets ÷ Current Liabilities). 2) Pull the exact figures from the financial statements. 3) Calculate and express in the correct format (times, % or days). 4) Comment on what the result means for the business.",
+    ta:"படிப்படியாக: 1) கேள்விக்கு சரியான விகிதத்தை தேர்ந்தெடுக்கவும் (எ.கா. நடப்பு விகிதம் = நடப்பு சொத்துக்கள் ÷ நடப்பு பொறுப்புகள்). 2) நிதிநிலை அறிக்கைகளிலிருந்து சரியான எண்களை எடுக்கவும். 3) சரியான வடிவத்தில் கணக்கிடவும் (மடங்கு, % அல்லது நாட்கள்). 4) முடிவு வணிகத்திற்கு என்ன பொருள் என்பதை விளக்கவும்." }
+];
+function currentLang(){ return document.documentElement.getAttribute('data-lang') || 'en'; }
+function botReply(question){
+  const q = question.toLowerCase();
+  for(const item of tutorKB){
+    if(item.keys.some(k=>q.includes(k))){
+      return currentLang()==='ta' ? item.ta : item.en;
+    }
+  }
+  return currentLang()==='ta'
+    ? "நல்ல கேள்வி! தயவுசெய்து பற்று/வரவு, இருப்புச்சரிபார்வை, தேய்மானம், ஏடு பதிவுகள், இலாப நஷ்டக் கணக்கு அல்லது விகிதங்கள் போன்ற ஒரு குறிப்பிட்ட தலைப்பைக் குறிப்பிடவும் — அல்லது WhatsApp வழியாக எங்கள் ஆசிரியரிடம் நேரடியாகக் கேளுங்கள்."
+    : "Good question! For a full worked answer, mention a specific topic like debit/credit, trial balance, depreciation, journal entries, profit & loss, or ratios — or ask our teacher directly on WhatsApp for a detailed explanation.";
+}
+function appendMsg(text, who){
+  const body = document.getElementById('chat-body');
+  const div = document.createElement('div');
+  div.className = 'msg ' + who;
+  div.textContent = text;
+  body.appendChild(div);
+  body.scrollTop = body.scrollHeight;
+}
+function sendChat(){
+  const input = document.getElementById('chat-input');
+  const val = input.value.trim();
+  if(!val) return;
+  appendMsg(val, 'user');
+  input.value = '';
+  const body = document.getElementById('chat-body');
+  const typing = document.createElement('div');
+  typing.className = 'msg bot';
+  typing.innerHTML = '<div class="typing-dots"><span></span><span></span><span></span></div>';
+  body.appendChild(typing);
+  body.scrollTop = body.scrollHeight;
+  setTimeout(()=>{
+    typing.remove();
+    appendMsg(botReply(val), 'bot');
+  }, 700);
+}
+function askTutor(question){
+  document.getElementById('chat-input').value = question;
+  sendChat();
+  document.getElementById('ai-tutor').scrollIntoView({behavior:'smooth', block:'start'});
+}
+
+document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
